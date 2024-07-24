@@ -1,0 +1,200 @@
+h2,h4 {
+  color: #fff;
+}
+
+/* ----------------------------------- Navbar ------------------------------------*/
+.navbar {
+  transition: background-color 0.3s;
+  z-index: 1000; /* Ensure navbar is above other elements */
+  height: 12vh;
+}
+
+.navbar-brand img {
+  padding-left: 335px;
+  height: 100%;
+  max-height: 100px;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: orange;
+}
+
+.navbar-collapse {
+  padding-right: 435px;
+}
+
+.navbar-scroll {
+  background-color: transparent;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.footer-link {
+  color: orange;
+}
+
+.navbar-scrolled {
+  background-color: black;
+}
+
+/* ----------------------------------- Video Section ------------------------------------*/
+.video-container {
+  z-index: -100;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----------------------------------- About Section ------------------------------------*/
+
+.about-section-padding {
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+.about-section-padding p{
+color: black;
+}
+
+.row-pb-10 {
+  padding-bottom: 10vh;
+}
+
+.about-services {
+  padding-bottom: 5vh;
+}
+
+.about-services span {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, black, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-item {
+  position: relative;
+  padding-top: 10vh;
+}
+
+.service-item-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/interior-cleaning.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+.service-item-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/car-polishing.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.service-item-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/ceramic-coating.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.about-services h1 span {
+  font-size: 140%;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: black;
+  padding-bottom: 10vh;
+}
+
+.service-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------------------------------- Footer Section ------------------------------------*/
+
+.first-word {
+  color: white;
+}
+
+.second-word {
+  color: darkorange;
+}
+
+
+.logo-image {
+  max-height: 49px;
+  padding-bottom: 4px;
+}
+
+
+.footer {
+  background-color: black;
+  height: auto;
+}
+
+
+
+.footer-social-icon {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.connect-us {
+  color: #fff;
+  flex-direction: column;
+}
+
+.map {
+  padding-top: 5%;
+  height: 400px;
+  width: 400px;
+}
+
+p {
+  color: #fff;
+}
+
+
+.logo-name {
+  display: flex;
+}
+.copyright{
+display: flex;
+justify-content: center;
+}
+
+.footer-info {
+  display: flex;
+  padding-top: 5%;
+}
+
+.about-us , .location{
+  padding-right: 20px;
+}
+
