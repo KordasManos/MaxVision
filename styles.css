@@ -1,4 +1,5 @@
-h2,h4 {
+h2,
+h4 {
   color: #fff;
 }
 
@@ -6,24 +7,23 @@ h2,h4 {
 .navbar {
   transition: background-color 0.3s;
   z-index: 1000; /* Ensure navbar is above other elements */
-  height: 12vh;
+  height: 15vh;
 }
 
 .navbar-brand img {
-  padding-left: 335px;
-  height: 100%;
-  max-height: 100px;
+  padding-left: 10vw;
+  max-height: 20vh;
+  margin-top: 0vh;
 }
 
 .navbar-nav a {
-  font-size: 15px;
+  font-size: 2.5vh;
   text-transform: uppercase;
-  font-weight: 500;
-  color: orange;
+  font-weight: 150;
 }
 
 .navbar-collapse {
-  padding-right: 435px;
+  padding-right: 10vw;
 }
 
 .navbar-scroll {
@@ -35,7 +35,7 @@ h2,h4 {
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .footer-link {
-  color: orange;
+  color: #fff;
 }
 
 .navbar-scrolled {
@@ -46,7 +46,7 @@ h2,h4 {
 .video-container {
   z-index: -100;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   top: 0;
@@ -59,14 +59,24 @@ h2,h4 {
   object-fit: cover;
 }
 
+.video-tint {
+  position: absolute; /* Positions the overlay over the video */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures the overlay covers the entire container */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a black tint with 50% opacity */
+  pointer-events: none; /* Allows interactions with elements beneath the overlay */
+}
+
 /* ----------------------------------- About Section ------------------------------------*/
 
 .about-section-padding {
   padding-top: 10vh;
   padding-bottom: 20vh;
 }
-.about-section-padding p{
-color: black;
+.about-section-padding p {
+  color: black;
 }
 
 .row-pb-10 {
@@ -94,14 +104,14 @@ color: black;
     url(./images/interior-cleaning.jpeg);
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 23vh;
 }
 .service-item-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./images/car-polishing.jpeg);
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 23vh;
 }
 
 .service-item-3 {
@@ -109,7 +119,15 @@ color: black;
     url(./images/ceramic-coating.jpg);
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 23vh;
+}
+
+.service-item-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/ppf.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 23vh;
 }
 
 .about-services h1 span {
@@ -142,19 +160,15 @@ color: black;
   color: darkorange;
 }
 
-
 .logo-image {
   max-height: 49px;
   padding-bottom: 4px;
 }
 
-
 .footer {
   background-color: black;
   height: auto;
 }
-
-
 
 .footer-social-icon {
   height: 75px;
@@ -163,7 +177,6 @@ color: black;
   align-items: center;
   margin-bottom: 20px;
 }
-
 
 .connect-us {
   color: #fff;
@@ -180,13 +193,12 @@ p {
   color: #fff;
 }
 
-
 .logo-name {
   display: flex;
 }
-.copyright{
-display: flex;
-justify-content: center;
+.copyright {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-info {
@@ -194,6 +206,7 @@ justify-content: center;
   padding-top: 5%;
 }
 
-.about-us , .location{
+.about-us,
+.location {
   padding-right: 20px;
 }
