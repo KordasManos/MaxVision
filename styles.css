@@ -210,3 +210,111 @@ p {
 .location {
   padding-right: 20px;
 }
+
+.row-coating-info {
+  display: flex;
+  justify-content: center;
+}
+
+.row-coating-info > .bla-bla {
+  padding-left: 100px;
+}
+
+.coating-info-video .row-coating-info .col-5 > h1 {
+  color: black;
+  font-weight: 800;
+}
+
+.coating-info-video .row-coating-info .col-5 > p {
+  color: black;
+  width: 90%;
+  font-size: large;
+}
+
+.coating-info-video .row-coating-info .col-5 > button {
+  background-color: black;
+  border-color: darkorange;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100vw;
+  height: 50vw;
+  max-width: 600px;
+  max-height: 340px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  height: 15%;
+  background: url("https://img.icons8.com/ios-filled/100/ffffff/play-button-circled.png")
+    no-repeat center;
+  background-size: contain;
+}
+
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-popup-content {
+  position: relative;
+  width: calc(40vw * 16 / 9);
+  height: 40vw;
+  margin: 0;
+  padding: 0;
+}
+
+.video-popup-content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.global-container {
+  padding-left: 10vw; /* Adjust for your design */
+  padding-right: 10vw; /* Adjust for your design */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------------------------------- Follow Us Section ------------------------------------*/
+.follow-us-section {
+  background-color: #f0f1f4;
+  opacity: 0.8;
+}
+
+.follow-us-container {
+  display: flex;
+  align-items: center;
+}
+
+.follow-us-container > .row > .col-5 > h2 {
+  color: black;
+}
