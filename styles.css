@@ -213,25 +213,25 @@ p {
 
 .row-coating-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .row-coating-info > .bla-bla {
   padding-left: 100px;
 }
 
-.coating-info-video .row-coating-info .col-5 > h1 {
+.coating-info-video .row-coating-info .col-6 > h1 {
   color: black;
   font-weight: 800;
 }
 
-.coating-info-video .row-coating-info .col-5 > p {
+.coating-info-video .row-coating-info .col-6 > p {
   color: black;
-  width: 90%;
+  width: 95%;
   font-size: large;
 }
 
-.coating-info-video .row-coating-info .col-5 > button {
+.coating-info-video .row-coating-info .col-6 > button {
   background-color: black;
   border-color: darkorange;
 }
@@ -308,6 +308,10 @@ p {
 .follow-us-section {
   background-color: #f0f1f4;
   opacity: 0.8;
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Ensure it aligns to the edges */
+  background-color: #f8f9fa; /* Add background if necessary */
+  padding: 40px 0; /* Optional padding */
 }
 
 .follow-us-container {
@@ -317,4 +321,28 @@ p {
 
 .follow-us-container > .row > .col-5 > h2 {
   color: black;
+}
+
+.follow-us-container > .row > .col-4 {
+  position: relative;
+}
+
+.follow-us-container > .row > .col-4 img {
+  height: 50vh; /* or desired height */
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.follow-us-container > .row > .col-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  filter: blur(8px); /* Adjust the blur radius */
+  pointer-events: none; /* Allow clicks through the overlay */
+  z-index: 1; /* Ensures the overlay is on top */
 }
