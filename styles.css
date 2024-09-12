@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 h2,
 h4 {
   color: #fff;
@@ -201,6 +206,10 @@ p {
   justify-content: center;
 }
 
+.footer {
+  margin-top: 10vw;
+}
+
 .footer-info {
   display: flex;
   padding-top: 5%;
@@ -308,41 +317,53 @@ p {
 .follow-us-section {
   background-color: #f0f1f4;
   opacity: 0.8;
-  width: 100vw; /* Full viewport width */
-  margin-left: calc(-50vw + 50%); /* Ensure it aligns to the edges */
-  background-color: #f8f9fa; /* Add background if necessary */
-  padding: 40px 0; /* Optional padding */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #f8f9fa;
+  margin-top: 10vw;
 }
 
-.follow-us-container {
+.follow-us-container > .row {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .follow-us-container > .row > .col-5 > h2 {
   color: black;
 }
 
-.follow-us-container > .row > .col-4 {
-  position: relative;
+.follow-us-container > .row > .col-5 > p {
+  color: black;
 }
 
-.follow-us-container > .row > .col-4 img {
-  height: 50vh; /* or desired height */
-  width: auto;
-  object-fit: cover;
-  display: block;
+.follow-us-container > .row > .col-5 > p > a {
+  color: darkorange;
 }
 
-.follow-us-container > .row > .col-4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-  filter: blur(8px); /* Adjust the blur radius */
-  pointer-events: none; /* Allow clicks through the overlay */
-  z-index: 1; /* Ensures the overlay is on top */
+.social-links > a {
+  color: black;
+  margin-right: 20px;
+}
+
+.follow-us-banner {
+  height: 20vw;
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(images/banner-lambo.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.youtube-subscriber-count {
+  text-align: center;
+  color: #333;
+  padding: 10px;
+}
+
+.youtube-subscriber-count .subject {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
 }
