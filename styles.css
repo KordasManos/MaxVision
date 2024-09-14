@@ -58,6 +58,16 @@ h4 {
   left: 0;
 }
 
+.video-container-contact {
+  z-index: -100;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 #video-bg {
   width: 100%;
   height: 100%;
@@ -194,7 +204,9 @@ h4 {
   width: 400px;
 }
 
-p {
+.about-us,
+.location,
+.copyright > p {
   color: #fff;
 }
 
@@ -225,22 +237,22 @@ p {
   justify-content: space-around;
 }
 
-.row-coating-info > .bla-bla {
+.bla-bla {
   padding-left: 100px;
 }
 
-.coating-info-video .row-coating-info .col-6 > h1 {
+.bla-bla > h1 {
   color: black;
   font-weight: 800;
 }
 
-.coating-info-video .row-coating-info .col-6 > p {
+.bla-bla > p {
   color: black;
   width: 95%;
   font-size: large;
 }
 
-.coating-info-video .row-coating-info .col-6 > button {
+.bla-bla > button {
   background-color: black;
   border-color: darkorange;
 }
@@ -341,6 +353,10 @@ p {
   color: darkorange;
 }
 
+.follow-us-container > .row > .col-5 > h2 > span {
+  font-weight: 300;
+}
+
 .social-links > a {
   color: black;
   margin-right: 20px;
@@ -366,4 +382,44 @@ p {
   font-size: 14px;
   font-weight: 300;
   color: #555;
+}
+
+/* ---------- Contact Page ---------- */
+.contact-us-section {
+  margin-top: 10vw;
+}
+
+.contact-us-section > .row {
+  justify-content: center;
+}
+
+.contact-info > h2 {
+  color: black;
+  font-weight: 800;
+}
+
+.contact-info > p {
+  color: black;
+}
+
+.contact-info-image {
+  height: 20vw;
+  background-image: linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(images/profile-shop.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.working-hours > h5 {
+  font-weight: 800;
+}
+
+.hours-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.hours-list > li {
+  font-size: large;
 }
