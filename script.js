@@ -73,3 +73,91 @@ $(document).ready(function() {
         $(".openorclosed").removeClass("open").addClass("closed");
     }
 });
+
+// Portfolio filtering functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.portfolio-grid .card img');
+  const imagePopup = document.getElementById('imagePopup');
+  const carouselInner = document.querySelector('.carousel-inner');
+  const closePopup = document.querySelector('.close-popup');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  let currentIndex = 0;
+  let images = [];
+
+  // Collect all images from the portfolio cards
+  cards.forEach((card, index) => {
+      images.push(card.src);
+      
+      // Add click event to each image
+      card.addEventListener('click', function () {
+          currentIndex = index;
+          openModal();
+      });
+  });
+
+  // Open the modal and display the current image
+  function openModal() {
+      imagePopup.style.display = 'flex';
+      updateCarousel();
+  }
+
+  // Close the modal
+  closePopup.addEventListener('click', function () {
+      imagePopup.style.display = 'none';
+  });
+
+  // Update carousel with the current image
+  function updateCarousel() {
+      carouselInner.innerHTML = `
+          <div class="carousel-item active">
+              <img src="${images[currentIndex]}" alt="Portfolio Image" />
+          </div>`;
+  }
+
+  // Navigate to the previous image
+  prev.addEventListener('click', function () {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      updateCarousel();
+  });
+
+  // Navigate to the next image
+  next.addEventListener('click', function () {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      updateCarousel();
+  });
+
+  // Close the modal when clicking outside the carousel content
+  imagePopup.addEventListener('click', function (e) {
+      if (e.target === imagePopup) {
+          imagePopup.style.display = 'none';
+      }
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.portfolio-filter button');
+  const cards = document.querySelectorAll('.portfolio-grid .card');
+
+  // Add event listeners to all filter buttons
+  filterButtons.forEach(button => {
+      button.addEventListener('click', function () {
+          const filterValue = this.getAttribute('data-filter');
+
+          // Remove the 'active' class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add 'active' class to the clicked button
+          this.classList.add('active');
+
+          // Show/hide cards based on filter
+          cards.forEach(card => {
+              if (filterValue === 'all' || card.classList.contains(filterValue)) {
+                  card.style.display = 'block'; // Show the matching card
+              } else {
+                  card.style.display = 'none'; // Hide the non-matching card
+              }
+          });
+      });
+  });
+});
