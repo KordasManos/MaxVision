@@ -23,53 +23,41 @@
         <div class="video-tint"></div>
     </div>
 
-    <!-- Body -->
-    <section class="portfolio">
-        <!-- Filter buttons -->
-        <div class="portfolio-filter">
-            <button data-filter="all">All</button>
-            <button data-filter="exterior">Exterior Detailing</button>
-            <button data-filter="interior">Interior Detailing</button>
-            <button data-filter="ceramic">Ceramic Coating</button>
-            <button data-filter="headlights">Headlight Restoration</button>
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2" checked>
+    <input type="radio" name="Photos" id="check3" checked>
+    <input type="radio" name="Photos" id="check4" checked>
+    <input type="radio" name="Photos" id="check5" checked>
+
+    <div class="gallery-container">
+        <h1>OUR PHOTO GALLERY</h1>
+        <div class="top-content">
+            <h3>Photo Gallery</h3>
+            <label for="check1">All Photos</label>
+            <label for="check2">Cleaning</label>
+            <label for="check3">Polishing</label>
+            <label for="check4">Ceramic Coating</label>
+            <label for="check5">PPF</label>
         </div>
 
-        <!-- Portfolio grid -->
-        <div class="portfolio-grid">
-            <!-- Example of an Exterior Detailing card -->
-            <div class="card exterior">
-                <div class="card-content">
-                    <img src="images/profile-audi.jpg" alt="Exterior Detail 1">
-                    <div class="hover-content">
-                        <h3>Exterior Detail</h3>
-                        <p>High-gloss polish and ceramic coating for ultimate protection.</p>
-                    </div>
-                </div>
+        <div class="photo-gallery">
+            <div class="pic polishing">
+                <img src="images/profile-audi.jpg" alt="profile-audi">
             </div>
-
-            <!-- Example of an Interior Detailing card -->
-            <div class="card interior">
-                <div class="card-content">
-                    <img src="images/profile-lambo.jpg" alt="Interior Detail 1">
-                    <div class="hover-content">
-                        <h3>Interior Detail</h3>
-                        <p>Full interior cleaning including leather treatment and steam cleaning.</p>
-                    </div>
-                </div>
+            <div class="pic polishing">
+                <img src="images/profile-lambo.jpg" alt="profile-lambo">
             </div>
-
-            <!-- Add more projects here -->
-        </div>
-    </section>
-
-    <!-- Popup Modal for Carousel -->
-    <div id="imagePopup" class="popup-modal">
-        <div class="popup-content">
-            <span class="close-popup">&times;</span>
-            <div id="carouselExample" class="carousel">
-                <button id="prev">← Prev</button>
-                <div class="carousel-inner"></div>
-                <button id="next">Next →</button>
+            <div class="pic cleaning">
+                <img src="images/interior-cleaning.jpeg" alt="interior-cleaning">
+            </div>
+            <div class="pic ceramic">
+                <img src="images/ceramic-coating.jpg" alt="ceramic-coating">
+            </div>
+            <div class="pic cleaning">
+                <img src="images/profile-shop.jpeg" alt="profile-shop">
+            </div>
+            <div class="pic ppf">
+                <img src="images/ppf.jpg" alt="ppf">
             </div>
         </div>
     </div>

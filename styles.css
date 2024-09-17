@@ -513,130 +513,205 @@ body {
 }
 
 /* portfolio page*/
-.portfolio-filter {
-  text-align: center;
-  margin-bottom: 20px;
+input {
+  display: none;
 }
 
-.portfolio-filter button.active {
-  background-color: #007bff; /* Highlight active button with a different color */
-  color: #fff;
-}
-
-.portfolio-filter button {
-  margin: 5px;
-  padding: 10px 20px;
-  background-color: #444;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.portfolio-grid .card {
-  transition: all 0.3s ease;
-}
-
-.portfolio-filter button:hover {
-  background-color: #555;
-}
-
-.portfolio-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  position: relative;
-  width: 300px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
+.gallery-container {
   width: 100%;
-  transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.card-content {
+.gallery-container > h1 {
+  font-weight: normal;
+  font-size: 35px;
   position: relative;
+  margin: 40px 0;
 }
 
-.card:hover img {
-  transform: scale(1.1);
-}
-
-.hover-content {
+.gallery-container > h1::before {
+  content: "";
   position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: darkorange;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+.top-content {
+  background-color: darkgrey;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px darkorange;
+}
+
+.top-content > h3 {
+  height: 100%;
+  background-color: lightgrey;
+  line-height: 60px;
+  padding: 0 50px;
+  color: white;
+}
+
+.top-content > label {
+  display: inline-block;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.top-content > label:hover {
+  color: black;
+}
+
+.photo-gallery {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.pic {
+  position: relative;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+}
+
+.pic > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.pic::before {
+  content: "PHOTO GALLERY";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.pic::after {
+  content: "";
+  position: absolute;
+  width: 100%;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
 }
 
-.card:hover .hover-content {
+.pic:hover::after {
+  height: 100%;
+}
+
+.pic:hover::before {
+  margin-top: 0;
   opacity: 1;
 }
 
-.image-popup {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel {
+#check1:checked ~ .gallery-container .photo-gallery .pic {
+  opacity: 1;
+  transform: scale(1);
   position: relative;
-  width: 80%;
-  max-width: 800px;
+  transition: 0.5s;
 }
 
-.carousel-inner img {
-  width: 100%;
-  border-radius: 10px;
+#check2:checked ~ .gallery-container .photo-gallery .cleaning {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
 }
 
-.prev,
-.next {
-  cursor: pointer;
+#check2:checked ~ .gallery-container .photo-gallery .polishing,
+#check2:checked ~ .gallery-container .photo-gallery .ceramic,
+#check2:checked ~ .gallery-container .photo-gallery .ppf {
+  opacity: 0;
+  transform: scale(0);
   position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  user-select: none;
+  transition: 0s;
 }
 
-.prev {
-  left: 0;
+#check3:checked ~ .gallery-container .photo-gallery .polishing {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
 }
 
-.next {
-  right: 0;
-}
-
-.close-popup {
+#check3:checked ~ .gallery-container .photo-gallery .cleaning,
+#check3:checked ~ .gallery-container .photo-gallery .ceramic,
+#check3:checked ~ .gallery-container .photo-gallery .ppf {
+  opacity: 0;
+  transform: scale(0);
   position: absolute;
-  top: 10px;
-  right: 25px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
+  transition: 0s;
+}
+
+#check4:checked ~ .gallery-container .photo-gallery .ceramic {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+
+#check4:checked ~ .gallery-container .photo-gallery .polishing,
+#check4:checked ~ .gallery-container .photo-gallery .cleaning,
+#check4:checked ~ .gallery-container .photo-gallery .ppf {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#check5:checked ~ .gallery-container .photo-gallery .ppf {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+
+#check5:checked ~ .gallery-container .photo-gallery .polishing,
+#check5:checked ~ .gallery-container .photo-gallery .cleaning,
+#check5:checked ~ .gallery-container .photo-gallery .ceramic {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
 }
