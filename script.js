@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Close the modal
-  closePopup.addEventListener('click', function () {
+  closePopup?.addEventListener('click', function () {
       imagePopup.style.display = 'none';
   });
 
@@ -116,19 +116,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Navigate to the previous image
-  prev.addEventListener('click', function () {
+  prev?.addEventListener('click', function () {
       currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
       updateCarousel();
   });
 
   // Navigate to the next image
-  next.addEventListener('click', function () {
+  next?.addEventListener('click', function () {
       currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
       updateCarousel();
   });
 
   // Close the modal when clicking outside the carousel content
-  imagePopup.addEventListener('click', function (e) {
+  imagePopup?.addEventListener('click', function (e) {
       if (e.target === imagePopup) {
           imagePopup.style.display = 'none';
       }
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document?.addEventListener('DOMContentLoaded', function () {
   const filterButtons = document.querySelectorAll('.portfolio-filter button');
   const cards = document.querySelectorAll('.portfolio-grid .card');
 

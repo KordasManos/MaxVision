@@ -83,7 +83,7 @@ body {
 
 .about-section-padding {
   padding-top: 10vh;
-  padding-bottom: 20vh;
+  margin-bottom: 10vw;
 }
 .about-section-padding p {
   color: black;
@@ -91,17 +91,6 @@ body {
 
 .row-pb-10 {
   padding-bottom: 10vh;
-}
-
-.about-services {
-  padding-bottom: 5vh;
-}
-
-.about-services span {
-  font-family: sans-serif;
-  background: linear-gradient(to bottom right, black, orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .service-item {
@@ -140,12 +129,16 @@ body {
   height: 23vh;
 }
 
+.about-services {
+  padding-bottom: 2vh;
+}
+
 .about-services h1 span {
-  font-size: 140%;
-  font-weight: bold;
+  font-size: 80%;
   font-family: sans-serif;
   color: black;
   padding-bottom: 10vh;
+  font-weight: 800;
 }
 
 .service-title {
@@ -520,6 +513,7 @@ input {
 .gallery-container {
   width: 100%;
   text-align: center;
+  margin-bottom: 10vw;
 }
 
 .gallery-container > h1 {
@@ -554,22 +548,15 @@ input {
 }
 
 .top-content {
-  background-color: darkgrey;
-  width: 90%;
+  background-color: darkorange;
+  width: 50%;
   margin: 0 auto 20px auto;
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 5px;
-  box-shadow: 3px 3px 5px darkorange;
-}
-
-.top-content > h3 {
-  height: 100%;
-  background-color: lightgrey;
-  line-height: 60px;
-  padding: 0 50px;
-  color: white;
+  box-shadow: 3px 3px 5px black;
 }
 
 .top-content > label {
@@ -578,7 +565,7 @@ input {
   margin: 0 20px;
   line-height: 60px;
   font-size: 18px;
-  color: gray;
+  color: white;
   cursor: pointer;
   transition: color 0.5s;
 }
