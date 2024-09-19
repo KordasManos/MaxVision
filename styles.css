@@ -42,6 +42,45 @@ body {
   background-color: black;
 }
 
+.navbar-nav .nav-link.show {
+  color: white !important;
+}
+
+/* .dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #000000;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #000000;
+} */
+
+.dropdown-menu {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0e0e0; /* Optional light border */
+}
+
+.dropdown-menu .dropdown-item {
+  color: #000000; /* Black text */
+  font-weight: bold; /* Bold text */
+  text-transform: capitalize; /* PascalCase */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #fff; /* Lighter background on hover */
+  color: #928f8f; /* White text on hover */
+}
+
 /* ----------------------------------- Video Section ------------------------------------*/
 .video-container {
   z-index: -100;
