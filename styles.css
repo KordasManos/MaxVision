@@ -741,3 +741,64 @@ input {
   position: absolute;
   transition: 0s;
 }
+
+/* -------------------- Interior Cleaning Page -------------------------- */
+.interior-cleaning-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.interior-cleaning-section > .row {
+  justify-content: center;
+}
+
+.interior-cleaning-info > h2 {
+  color: black;
+  font-weight: 800;
+}
+
+.interior-cleaning-info > p {
+  color: black;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interior-cleaning-prices-section {
+  background-color: #f0efef;
+  opacity: 0.8;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  justify-content: space-around;
+}
+
+.interior-cleaning-prices-container > .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prices-header {
+  text-align: center;
+}
+
+.prices-header h1 {
+  color: black;
+  font-weight: 800;
+}
+
+.interior-cleaning-price-item {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 60vh;
+}
