@@ -804,97 +804,41 @@ input {
   height: 60vh;
 }
 
-/*AYTO THELEI FTIAKSIMO*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-* {
-  box-sizing: border-box;
+.before-after-results-section {
+  margin-bottom: 10vw;
 }
 
-body {
-  background: linear-gradient(62deg, #c93072 5%, #3365c0) fixed;
-}
+/*flip*/
 
-h1 {
-  color: white;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 0;
+.flip-container {
+  perspective: 1000px;
 }
-
-.line {
-  width: 100px;
-  height: 1px;
-  margin: 20px auto 40px auto;
-  border-bottom: 1px solid white;
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
 }
-
-img {
-  width: 100%;
-  display: block;
+.flip-container,
+.front,
+.back {
+  width: 320px;
+  height: 200px;
 }
-
-.container {
-  width: 50%;
-  display: block;
-  margin: 30px auto;
-}
-
-#before-after-slider {
-  width: 100%;
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
   position: relative;
-  overflow: hidden;
-  border: 3px solid white;
 }
-
-#after-image {
-  display: block;
-}
-
-#before-image {
+.front,
+.back {
+  backface-visibility: hidden;
   position: absolute;
-  height: 100%;
-  width: 50%;
   top: 0;
   left: 0;
-  overflow: hidden;
+}
+.front {
   z-index: 2;
+  transform: rotateY(0deg);
 }
-
-#resizer {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  z-index: 5;
-  top: 0;
-  left: 50%;
-  height: 100%;
-  width: 4px;
-  background: white;
-  /*Stop vertical scrolling on touch*/
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-}
-
-#resizer:after {
-  background: linear-gradient(62deg, #c93072 5%, #3365c0);
-  font-family: "Font Awesome 5 Free";
-  content: "\f337";
-  font-weight: 900;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: absolute;
-  margin: 0 0 0 -22px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 3px solid white;
-}
-
-@media (max-width: 767px) {
-  .container {
-    width: 100%;
-    padding: 0 20px;
-  }
+.back {
+  transform: rotateY(180deg);
 }
