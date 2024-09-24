@@ -74,9 +74,9 @@ $(document).ready(function() {
     }
 });
 
-// Portfolio filtering functionality
+// Gallery filtering functionality
 document.addEventListener('DOMContentLoaded', function () {
-  const cards = document.querySelectorAll('.portfolio-grid .card img');
+  const cards = document.querySelectorAll('.gallery-grid .card img');
   const imagePopup = document.getElementById('imagePopup');
   const carouselInner = document.querySelector('.carousel-inner');
   const closePopup = document.querySelector('.close-popup');
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
   let images = [];
 
-  // Collect all images from the portfolio cards
+  // Collect all images from the gallery cards
   cards.forEach((card, index) => {
       images.push(card.src);
       
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateCarousel() {
       carouselInner.innerHTML = `
           <div class="carousel-item active">
-              <img src="${images[currentIndex]}" alt="Portfolio Image" />
+              <img src="${images[currentIndex]}" alt="Gallery Image" />
           </div>`;
   }
 
@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document?.addEventListener('DOMContentLoaded', function () {
-  const filterButtons = document.querySelectorAll('.portfolio-filter button');
-  const cards = document.querySelectorAll('.portfolio-grid .card');
+  const filterButtons = document.querySelectorAll('.gallery-filter button');
+  const cards = document.querySelectorAll('.gallery-grid .card');
 
   // Add event listeners to all filter buttons
   filterButtons.forEach(button => {

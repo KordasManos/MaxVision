@@ -545,7 +545,7 @@ body {
   color: darkorange;
 }
 
-/* portfolio page*/
+/* gallery page*/
 input {
   display: none;
 }
@@ -785,8 +785,7 @@ input {
 
 .interior-cleaning-prices-container > .row {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .prices-header {
@@ -802,6 +801,13 @@ input {
   border-radius: 15px;
   background-color: #fff;
   height: 60vh;
+  margin-bottom: 10vh;
+  width: 20%;
+  margin-right: 10vh;
+}
+
+.interior-cleaning-price-item h3 {
+  margin-top: 5vh;
 }
 
 .before-after-results-section {
@@ -841,4 +847,13 @@ input {
 }
 .back {
   transform: rotateY(180deg);
+}
+
+.before-after-results-header {
+  text-align: center;
+}
+
+.before-after-results-header h1 {
+  color: black;
+  font-weight: 800;
 }
