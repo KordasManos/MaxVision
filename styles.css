@@ -790,24 +790,12 @@ input {
 
 .prices-header {
   text-align: center;
+  padding-bottom: 5vh;
 }
 
 .prices-header h1 {
   color: black;
   font-weight: 800;
-}
-
-.interior-cleaning-price-item {
-  border-radius: 15px;
-  background-color: #fff;
-  height: 60vh;
-  margin-bottom: 10vh;
-  width: 20%;
-  margin-right: 10vh;
-}
-
-.interior-cleaning-price-item h3 {
-  margin-top: 5vh;
 }
 
 .before-after-results-section {
@@ -856,4 +844,57 @@ input {
 .before-after-results-header h1 {
   color: black;
   font-weight: 800;
+}
+
+.global-price-header {
+  color: black;
+  font-weight: 800;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+.interior-cleaning-price-item {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 90vh;
+  margin-bottom: 10vh;
+  width: 20%;
+  margin-right: 10vh;
+}
+
+.global-price-tag {
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  font-size: xxx-large;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+.euro-symbol {
+  font-size: 24px;
+  vertical-align: super;
+  margin-right: 5px;
+}
+
+.price-header-line {
+  width: 33%;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto; /* Centers the line horizontally */
+}
+
+.disclaimer-section {
+  justify-content: center;
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+.disclaimer-section h6 {
+  font-weight: 800;
+}
+
+.disclaimer-section p {
+  font-size: x-small;
 }
