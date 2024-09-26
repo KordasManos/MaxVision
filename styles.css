@@ -898,3 +898,61 @@ input {
 .disclaimer-section p {
   font-size: x-small;
 }
+
+/* POLISHING PAGE*/
+.row-polishing-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20vh;
+}
+
+.row-polishing-info h1 {
+  font-weight: 800;
+  color: #000000;
+}
+
+.star-list {
+  list-style: none;
+  padding-top: 10vh;
+}
+
+.star-list li::before {
+  content: "★";
+  margin-right: 8px;
+  color: black;
+}
+
+.star-list strong {
+  font-weight: 800;
+}
+
+.wax-section {
+  background-color: #f0f1f4;
+  opacity: 0.8;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #f8f9fa;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.wax-container > .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wax-container > .row > .col-5 > h1 {
+  color: #000000;
+  font-weight: 800;
+}
+
+.wax-banner {
+  height: 20vw;
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(images/ceramic-coating.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
