@@ -899,7 +899,7 @@ input {
   font-size: x-small;
 }
 
-/* POLISHING PAGE*/
+/* -------------------- Polishing Page -------------------------- */
 .row-polishing-info {
   display: flex;
   justify-content: space-evenly;
@@ -913,7 +913,7 @@ input {
 
 .star-list {
   list-style: none;
-  padding-top: 10vh;
+  padding-top: 7vh;
 }
 
 .star-list li::before {
@@ -985,4 +985,38 @@ input {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* -------------------- Ceramic Coating Page -------------------------- */
+.ceramic-coating-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ceramic-coating-section > .row {
+  justify-content: space-evenly;
+}
+
+.ceramic-coating-info > h2 {
+  color: black;
+  font-weight: 800;
+}
+
+.ceramic-coating-info > p {
+  color: black;
+}
+
+.ceramic-image {
+  background-image: url(images/profile-lambo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.global-price-tag p {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  color: inherit;
+  display: inline;
 }
