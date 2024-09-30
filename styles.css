@@ -1137,3 +1137,29 @@ input {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* -------------------- PPF Installation Page -------------------------- */
+.ppf-installation-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-installation-section > .row {
+  justify-content: space-evenly;
+}
+
+.ppf-installation-info > h2 {
+  color: black;
+  font-weight: 800;
+}
+
+.ppf-installation-info > p {
+  color: black;
+}
+
+.ppf-installation-image {
+  background-image: url(images/ppf.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
