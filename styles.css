@@ -1163,3 +1163,35 @@ input {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.ppf-prices-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-prices-section > .row {
+  justify-content: center;
+}
+
+.ppf-prices-section {
+  background-color: #f0efef;
+  opacity: 0.8;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  justify-content: space-around;
+}
+
+.ppf-prices-container > .row {
+  display: flex;
+  justify-content: center;
+}
+.ppf-price-item {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 90vh;
+  margin-bottom: 10vh;
+  width: 20%;
+  margin-right: 10vh;
+}
