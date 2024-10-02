@@ -1195,3 +1195,48 @@ input {
   width: 20%;
   margin-right: 10vh;
 }
+
+.ppf-pros-n-cons-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-pros-n-cons-section > .row {
+  justify-content: space-evenly;
+}
+
+.ppf-pros-n-cons-info > h2 {
+  color: black;
+  font-weight: 800;
+  padding-bottom: 1vw;
+}
+
+.ppf-pros-n-cons-info > p {
+  color: black;
+}
+
+.ppf-pros-n-cons-image {
+  background-image: url(images/ppf.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ppf-pros-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-pros-section > .row {
+  justify-content: center;
+}
+
+.ppf-pros-info > h2 {
+  color: black;
+  font-weight: 800;
+  padding-bottom: 1vw;
+}
+
+.ppf-pros-info > p {
+  color: black;
+}
