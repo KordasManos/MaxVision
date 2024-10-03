@@ -1,0 +1,162 @@
+/* ----------------------------------- Navbar ------------------------------------*/
+.navbar {
+  transition: background-color 0.3s;
+  z-index: 1000;
+  height: 15vh;
+}
+
+.navbar-brand img {
+  padding-left: 10vw;
+  max-height: 20vh;
+  margin-top: 0vh;
+  padding-bottom: 1vh;
+}
+
+.navbar-nav a {
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  font-weight: 150;
+}
+
+.navbar-collapse {
+  padding-right: 10vw;
+}
+
+.navbar-scroll {
+  background-color: transparent;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.footer-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  margin-bottom: 2vh;
+}
+
+.navbar-scrolled {
+  background-color: black;
+}
+
+.navbar-nav .nav-link.show {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0e0e0; /* Optional light border */
+}
+
+.dropdown-menu .dropdown-item {
+  color: #000000; /* Black text */
+  font-weight: bold; /* Bold text */
+  text-transform: capitalize; /* PascalCase */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #fff; /* Lighter background on hover */
+  color: #928f8f; /* White text on hover */
+}
+
+/* --------------------- Responsive Adjustments --------------------------*/
+@media (max-width: 992px) {
+  /* Navbar height for tablets and small desktops */
+  .navbar {
+    height: 10vh;
+  }
+
+  .navbar-brand img {
+    padding-left: 5vw;
+    max-height: 10vh;
+  }
+
+  .navbar-nav a {
+    font-size: 2.2vh;
+  }
+
+  .navbar-collapse {
+    padding-right: 5vw; /* Adjust the right padding */
+    padding-left: 5vw; /* Ensure equal padding */
+  }
+
+  .dropdown-menu {
+    background-color: #ffffff; /* White background */
+    border: 1px solid black; /* Optional light border */
+  }
+
+  .navbar-scroll .nav-link,
+  .navbar-scroll .navbar-toggler-icon,
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .navbar-toggler-icon,
+  .footer-link {
+    color: darkorange;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar height for mobile devices */
+  .navbar {
+    height: 8vh;
+  }
+
+  .navbar-brand img {
+    padding-left: 2vw;
+    max-height: 8vh;
+  }
+
+  .navbar-nav a {
+    font-size: 2vh;
+  }
+
+  .navbar-collapse {
+    padding-right: 2vw; /* Adjust the right padding */
+    padding-left: 2vw; /* Ensure equal padding */
+  }
+
+  .dropdown-menu .dropdown-item {
+    font-size: 2vh;
+  }
+
+  .navbar-scroll .nav-link,
+  .navbar-scroll .navbar-toggler-icon,
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .navbar-toggler-icon,
+  .footer-link {
+    color: darkorange;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust navbar for very small screens (e.g., iPhone SE) */
+  .navbar {
+    height: 7vh;
+  }
+
+  .navbar-brand img {
+    padding-left: 1vw;
+    max-height: 7vh;
+  }
+
+  .navbar-nav a {
+    font-size: 1.8vh;
+  }
+
+  .navbar-collapse {
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
+
+  .navbar-scroll .nav-link,
+  .navbar-scroll .navbar-toggler-icon,
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .navbar-toggler-icon,
+  .footer-link {
+    color: darkorange;
+  }
+}

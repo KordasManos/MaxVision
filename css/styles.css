@@ -3,82 +3,11 @@ body {
   overflow-x: hidden;
 }
 
-/* ----------------------------------- Navbar ------------------------------------*/
-.navbar {
-  transition: background-color 0.3s;
-  z-index: 1000; /* Ensure navbar is above other elements */
-  height: 15vh;
-}
-
-.navbar-brand img {
-  padding-left: 10vw;
-  max-height: 20vh;
-  margin-top: 0vh;
-}
-
-.navbar-nav a {
-  font-size: 2.5vh;
-  text-transform: uppercase;
-  font-weight: 150;
-}
-
-.navbar-collapse {
-  padding-right: 10vw;
-}
-
-.navbar-scroll {
-  background-color: transparent;
-}
-
-.navbar-scroll .nav-link,
-.navbar-scroll .navbar-toggler-icon,
-.navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-toggler-icon,
-.footer-link {
-  color: #fff;
-}
-
-.navbar-scrolled {
-  background-color: black;
-}
-
-.navbar-nav .nav-link.show {
-  color: white !important;
-}
-
-/* .dropdown-menu {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-}
-
-.dropdown-menu .dropdown-item {
-  color: #000000;
-  font-weight: 800;
-  text-transform: capitalize;
-  font-size: large;
-}
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: #f0f0f0;
-  color: #000000;
-} */
-
-.dropdown-menu {
-  background-color: #ffffff; /* White background */
-  border: 1px solid #e0e0e0; /* Optional light border */
-}
-
-.dropdown-menu .dropdown-item {
-  color: #000000; /* Black text */
-  font-weight: bold; /* Bold text */
-  text-transform: capitalize; /* PascalCase */
-  background-color: transparent; /* Transparent background */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: #fff; /* Lighter background on hover */
-  color: #928f8f; /* White text on hover */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ----------------------------------- Video Section ------------------------------------*/
