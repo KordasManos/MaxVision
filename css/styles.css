@@ -4,8 +4,7 @@ body {
 }
 
 img,
-video,
-iframe {
+video {
   max-width: 100%;
   height: auto;
 }
@@ -308,7 +307,7 @@ iframe {
 .contact-info-image {
   height: 20vw;
   background-image: linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(images/profile-shop.jpeg);
+    url(/images/profile-shop.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
