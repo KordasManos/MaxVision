@@ -1,0 +1,26 @@
+.footer {
+  clear: both;
+  background-color: black;
+  height: auto;
+}
+
+.about-us,
+.location,
+.copyright > p {
+  color: #fff;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info {
+  display: flex;
+  padding-top: 5%;
+}
+
+.about-us,
+.location {
+  padding-right: 20px;
+}
