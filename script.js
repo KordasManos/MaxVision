@@ -161,3 +161,63 @@ document?.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+
+/* TRANSLATION SERVICE */
+
+let currentLanguage = 'gr'; // Set default language to Greek
+
+
+// Load translations from JSON file
+function loadTranslations() {
+  fetch(`translations-${currentLanguage}.json`)
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.json();
+      })
+      .then(translations => {
+          console.log('Loaded translations:', translations); // Log loaded translations for debugging
+          
+          // Find all elements with translate attribute
+          document.querySelectorAll('[translate]').forEach(element => {
+              // const innerText = element.innerText.trim(); // Get trimmed inner text
+              // console.log('Element innerText:', innerText); // Log the inner text
+
+              const innerText = "{{ CARCLEANING | TRANSLATE }}";
+              const containsTranslate = innerText.includes('| translate');
+              const keyMatch = innerText.match(/{{\s*(.+?)\s*\|\s*translate\s*}}/i);
+              console.log('Contains "| translate"?', containsTranslate); // Returns true or false
+              console.log('keyMatch ', keyMatch); // Returns true or false
+              // Log the matched key for debugging
+              if (keyMatch && keyMatch[1]) {
+                  const translationKey = keyMatch[1]; // Extract key
+                  console.log('Extracted key:', translationKey);
+
+                  // Check if the key exists in the translations
+                  if (translations[translationKey]) {
+                      element.innerText = translations[translationKey]; // Replace text with translation
+                  } else {
+                      console.warn(`Translation for key "${translationKey}" not found`); // Warn if translation not found
+                  }
+              } else {
+                  console.warn(`No match found for innerText: "${innerText}"`); // Log if no match found
+              }
+          });
+      })
+      .catch(error => console.error('Error loading translations:', error));
+}
+
+
+
+// Toggle language when the button is clicked
+document.getElementById('toggleLanguage').addEventListener('click', function() {
+    // Switch language
+    currentLanguage = (currentLanguage === 'gr') ? 'en' : 'gr';
+    this.innerText = (currentLanguage === 'gr') ? 'EN' : 'GR'; // Update button text
+    loadTranslations(); // Load new translations
+});
+
+// Load default translations on page load
+window.addEventListener('DOMContentLoaded', loadTranslations);
+
