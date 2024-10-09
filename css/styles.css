@@ -96,6 +96,12 @@ video {
   height: 23vh;
 }
 
+@media only screen and (min-width: 450px) and (max-width: 1024px) {
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 .about-services {
   padding-bottom: 2vh;
 }
@@ -219,9 +225,38 @@ video {
   display: block;
 }
 
+@media only screen and (max-width: 1024px) {
+  .row-coating-info {
+    display: block;
+    text-align: center;
+  }
+
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .bla-bla {
+    padding-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .bla-bla > p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .bla-bla > button {
+    margin-top: 10px;
+  }
+}
+
 .global-container {
-  padding-left: 10vw; /* Adjust for your design */
-  padding-right: 10vw; /* Adjust for your design */
+  padding-left: 10vw;
+  padding-right: 10vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -274,6 +309,12 @@ video {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 767px) {
+  .follow-us-banner {
+    display: none;
+  }
+}
+
 .youtube-subscriber-count {
   text-align: center;
   color: #333;
@@ -284,148 +325,6 @@ video {
   font-size: 14px;
   font-weight: 300;
   color: #555;
-}
-
-/* ---------- Contact Page ---------- */
-.contact-us-section {
-  margin-top: 10vw;
-}
-
-.contact-us-section > .row {
-  justify-content: center;
-}
-
-.contact-info > h2 {
-  color: black;
-  font-weight: 800;
-}
-
-.contact-info > p {
-  color: black;
-}
-
-.contact-info-image {
-  height: 20vw;
-  background-image: linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/images/profile-shop.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.working-hours > h5 {
-  font-weight: 800;
-}
-
-.hours-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.hours-list > li {
-  font-size: large;
-}
-
-.map {
-  height: 30vw;
-  width: 100%;
-}
-
-.contact-contacts {
-  display: flex;
-  padding-top: 4vw;
-}
-.contact-contacts > .col-6 > h5 {
-  font-weight: 800;
-}
-
-/* Container for centering the section */
-.working-hours-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
-}
-
-.openinghours {
-  font-family: Lucida Console;
-  border-radius: 4px;
-  margin: 20px;
-  box-shadow: 0 0 15px black;
-  padding: 20px;
-  overflow: hidden;
-  display: inline-block;
-  width: 60%;
-}
-
-.openinghourscontent {
-  text-align: center;
-}
-
-.openinghourscontent h3 {
-  margin-top: 0.5em;
-  font-size: 1.5em;
-}
-
-.opening-hours-table {
-  margin: auto;
-  border-collapse: collapse;
-  width: 60%;
-}
-
-.opening-hours-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  font-size: 1.1em;
-}
-
-.opening-hours-table tr:nth-child(even) {
-  background-color: #f2f2f2; /* Zebra striping for table rows */
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.opening-hours-header {
-  font-size: 1.5em;
-  font-weight: normal;
-  color: #555;
-  text-align: center;
-  margin: 20px 0;
-  position: relative;
-}
-
-.opening-hours-header::before {
-  content: "\1F551"; /* Clock icon */
-  font-size: 1.2em;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-#open-status {
-  display: block;
-  text-align: center;
-  border: dotted lightgrey 3px;
-  width: 60%;
-}
-
-.openorclosed.open:after {
-  content: " Open";
-  color: green;
-}
-
-.openorclosed.closed:after {
-  content: " Closed";
-  color: red;
-}
-
-.today {
-  color: darkorange;
 }
 
 /* gallery page*/
