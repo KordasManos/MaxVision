@@ -178,15 +178,19 @@ function loadTranslations(language) {
         .catch(error => console.error('Error loading translations:', error));
 }
 
+function getNestedTranslation(key, translations) {
+    return key.split('.').reduce((obj, k) => (obj ? obj[k] : null), translations);
+}
 
 function updateText(translations) {
-
     const elements = document.querySelectorAll('[data-translate]');
-    
+
     elements.forEach(element => {
         const key = element.getAttribute('data-translate');
-        if (translations[key]) {
-            element.textContent = translations[key];
+        const translation = getNestedTranslation(key, translations);
+        
+        if (translation) {
+            element.textContent = translation;
         }
     });
 }
