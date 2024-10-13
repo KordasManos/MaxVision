@@ -1,0 +1,103 @@
+/* -------------------- PPF Installation Page -------------------------- */
+.ppf-installation-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-installation-section > .row {
+  justify-content: space-evenly;
+}
+
+.ppf-installation-info > h2 {
+  color: black;
+  font-weight: 800;
+}
+
+.ppf-installation-info > p {
+  color: black;
+}
+
+.ppf-installation-image {
+  background-image: url(/assets/images/ppf.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ppf-prices-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-prices-section > .row {
+  justify-content: center;
+}
+
+.ppf-prices-section {
+  background-color: #f0efef;
+  opacity: 0.8;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  justify-content: space-around;
+}
+
+.ppf-prices-container > .row {
+  display: flex;
+  justify-content: center;
+}
+
+.ppf-price-item {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 90vh;
+  margin-bottom: 10vh;
+  width: 20%;
+  margin-right: 10vh;
+}
+
+.ppf-pros-n-cons-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-pros-n-cons-section > .row {
+  justify-content: space-evenly;
+}
+
+.ppf-pros-n-cons-info > h2 {
+  color: black;
+  font-weight: 800;
+  padding-bottom: 1vw;
+}
+
+.ppf-pros-n-cons-info > p {
+  color: black;
+}
+
+.ppf-pros-n-cons-image {
+  background-image: url(/assets/images/ppf.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ppf-pros-section {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.ppf-pros-section > .row {
+  justify-content: center;
+}
+
+.ppf-pros-info > h2 {
+  color: black;
+  font-weight: 800;
+  padding-bottom: 1vw;
+}
+
+.ppf-pros-info > p {
+  color: black;
+}
