@@ -18,7 +18,7 @@
 }
 
 .ceramic-image {
-  background-image: url(/images/profile-lambo.jpg);
+  background-image: url(/assets/images/profile-lambo.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@
   height: 30vw;
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/images/ceramic-coating.jpg);
+    url(/assets/images/ceramic-coating.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@
   height: 20vw;
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/images/profile-audi.jpg);
+    url(/assets/images/profile-audi.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@
   height: 20vw;
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/images/ceramic-coating.jpg);
+    url(/assets/images/ceramic-coating.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@
   height: 20vw;
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/images/banner-lambo.jpeg);
+    url(/assets/images/banner-lambo.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
