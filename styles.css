@@ -351,3 +351,13 @@ video {
   margin-top: 7vh;
   margin-bottom: 7vh;
 }
+
+.prices-header {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.prices-header h1 {
+  color: black;
+  font-weight: 800;
+}

@@ -38,21 +38,6 @@
   justify-content: space-around;
 }
 
-.interior-cleaning-prices-container > .row {
-  display: flex;
-  justify-content: center;
-}
-
-.prices-header {
-  text-align: center;
-  padding-bottom: 5vh;
-}
-
-.prices-header h1 {
-  color: black;
-  font-weight: 800;
-}
-
 .before-after-results-section {
   margin-bottom: 10vw;
 }
@@ -101,13 +86,39 @@
   font-weight: 800;
 }
 
+.row-with-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .interior-cleaning-price-item {
   border-radius: 15px;
   background-color: #fff;
-  height: 100vh;
+  height: auto;
   margin-bottom: 10vh;
   width: 20%;
-  margin-right: 10vh;
+}
+
+.interior-cleaning-price-item > ul {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .interior-cleaning-price-item {
+    margin-bottom: 2rem;
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .interior-cleaning-price-item {
+    font-size: small;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  .prices-header h1 {
+    font-size: larger;
+  }
 }
 
 .euro-symbol {
