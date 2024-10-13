@@ -163,13 +163,48 @@ document?.addEventListener('DOMContentLoaded', function () {
 });
 
 /* TRANSLATION SERVICE */
-let currentLanguage = 'gr';
+let currentLanguage; // Declare the variable to hold the current language
+
+document.addEventListener('DOMContentLoaded', function () {
+    const languageToggleButton = document.getElementById('languageSwitchBtn');
+    const currentLanguageElement = document.getElementById('currentLanguage'); // Declare and assign
+
+    // Add event listener for language toggle
+    if (languageToggleButton) {
+        languageToggleButton.addEventListener('click', toggleLanguage);
+    }
+
+    // Check localStorage for a saved language; if none, default to 'gr'
+    const savedLanguage = localStorage.getItem('language');
+    currentLanguage = savedLanguage ? savedLanguage : 'gr'; // Default to 'gr'
+
+    // Check if the currentLanguageElement exists before trying to set textContent
+    if (currentLanguageElement) {
+        currentLanguageElement.textContent = currentLanguage.toUpperCase();
+    }
+
+    // Load translations based on the current language
+    loadTranslations(currentLanguage);
+});
+
+// Function to toggle language
 function toggleLanguage() {
     currentLanguage = currentLanguage === 'gr' ? 'en' : 'gr';
-    document.getElementById('currentLanguage').textContent = currentLanguage.toUpperCase();
+    const currentLanguageElement = document.getElementById('currentLanguage'); // Declare inside function
+
+    // Check if the currentLanguageElement exists before trying to set textContent
+    if (currentLanguageElement) {
+        currentLanguageElement.textContent = currentLanguage.toUpperCase();
+    }
+
+    // Store the selected language in localStorage
+    localStorage.setItem('language', currentLanguage);
+
+    // Load translations for the selected language
     loadTranslations(currentLanguage);
 }
 
+// Load translations based on the current language
 function loadTranslations(language) {
     const url = `/assets/${language}.json`;
     fetch(url)
@@ -178,10 +213,12 @@ function loadTranslations(language) {
         .catch(error => console.error('Error loading translations:', error));
 }
 
+// Function to get nested translation
 function getNestedTranslation(key, translations) {
     return key.split('.').reduce((obj, k) => (obj ? obj[k] : null), translations);
 }
 
+// Function to update text elements
 function updateText(translations) {
     const elements = document.querySelectorAll('[data-translate]');
 
@@ -195,8 +232,16 @@ function updateText(translations) {
     });
 }
 
-
-// Load default language on page load
+// Load default language on page load (if not already handled)
 window.addEventListener('load', function() {
-    loadTranslations('gr');
+    // Set current language and update the display
+    const savedLanguage = localStorage.getItem('language');
+    currentLanguage = savedLanguage ? savedLanguage : 'gr';
+    const currentLanguageElement = document.getElementById('currentLanguage'); // Declare here too
+
+    if (currentLanguageElement) {
+        currentLanguageElement.textContent = currentLanguage.toUpperCase();
+    }
+
+    loadTranslations(currentLanguage);
 });

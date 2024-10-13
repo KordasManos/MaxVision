@@ -9,6 +9,29 @@
     "gallery": "Gallery",
     "contact": "Contact"
   },
+  "interior_cleaning": {
+    "info_title": "CAR INTERIOR DEEP CLEANING",
+    "info_paragraph_1": "The entire interior and trunk are deep/steam cleaned. Leather upholstery is cleaned with a pH neutral leather cleaner and then treated with a conditioner. Carpets, mats and fabric seats are deep cleaned and shampoo extracted. Dashboard, center console and door panels are cleaned and then protected with a dressing to obtain their original appearance. The windows are cleaned streak-free.",
+    "info_paragraph_2": "In case of serious pollution or a lot of dog/cat hair, an additional charge may be made. Request a free quote by contacting us by email or visit our location without obligation.",
+    "prices_title": "INTERIOR CLEANING PRICES",
+    "item_1_title": "Deep Cleaning Interior",
+    "item_1_list_item_1": "Cleaning dashboard, center console and door panels",
+    "item_1_list_item_2": "Cleaning and nourishing leather seats",
+    "item_1_list_item_3": "Cleaning fabric seats (shampoo extraction)",
+    "item_1_list_item_4": "Cleaning car mats and carpet (shampoo extraction)",
+    "item_1_list_item_5": "Treatment of plastic parts (UV protection, new look)",
+    "item_1_list_item_6": "Clean windows without streaks",
+    "item_2_title": "Ozone Treatment",
+    "item_2_list_item_1": "Deodorize car interior",
+    "item_2_list_item_2": "Removing bad odors",
+    "item_2_list_item_3": "Ozone gas neutralizes even the smallest corners",
+    "item_2_list_item_4": "Only possible after an interior cleaning",
+    "item_3_title": "Cleaning the roof lining",
+    "item_3_list_item_1": "Remove stains or dirt with specifically designed cleaning agents",
+    "item_3_list_item_2": "Price depends on the pollution",
+    "before_after_title": "BEFORE/AFTER RESULTS",
+    "before_after_message": "Hover over the images to view the result."
+  },
   "car_cleaning": "Car Cleaning",
   "&detailing": " & Detailing",
   "interior": "Interior",
@@ -28,5 +51,7 @@
   "follow_us_paragraph_1": "Follow us on social media and stay up-to-date with our latest projects, promotions and so much more! We also have a ",
   "follow_us_paragraph_2": " where we upload new videos of our auto detailing treatments every week.",
   "youtube_channel": "Youtube Channel",
-  "more_than_200_videos_available": "More than 200 Videos Available"
+  "more_than_200_videos_available": "More than 200 Videos Available",
+  "disclaimer_title": "DISCLAIMER",
+  "disclaimer_content": "(*) The above prices apply to average city cars and passenger cars. Large cars such as sedans, station wagons and SUVs are always at an additional cost. Oversize cars such as vans and trucks only on request. All prices are based on the average pollution and condition of the vehicle. Prices are exclusive of VAT and indicative. Each car is unique and requires a different approach or longer period of time. For the most correct price, it is best to contact us for an appointment. See also our general terms and conditions."
 }
