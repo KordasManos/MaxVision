@@ -139,3 +139,47 @@
 .today {
   color: darkorange;
 }
+
+@media only screen and (max-width: 576px) {
+  .contact-info {
+    font-size: xx-small;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .contact-info-image {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .working-hours-container {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+
+  .openinghours {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+  }
+
+  .opening-hours-table {
+    width: 90%;
+  }
+
+  .opening-hours-table td {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .opening-hours-header {
+    font-size: 1.2em;
+  }
+
+  #open-status {
+    width: 90%;
+    font-size: 0.9em;
+  }
+}

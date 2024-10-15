@@ -1,4 +1,3 @@
-// Script to handle navbar scrolling
 window.addEventListener('scroll', function () {
   const navbar = document.querySelector('.navbar');
   if (window.scrollY > 50) {
@@ -8,9 +7,8 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Wait until the DOM is fully loaded to handle video popup functionality
 window.addEventListener('DOMContentLoaded', function() {
-  // Script to handle video popup on thumbnail click
+
   const videoThumbnail = document.getElementById('videoThumbnail');
   const videoPopup = document.getElementById('videoPopup');
   const videoFrame = document.getElementById('videoFrame');
@@ -32,7 +30,6 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Opening hours script (ensure it's run after DOM is loaded)
 $(document).ready(function() {
     var currentDate = new Date();
     var weekday = [];
@@ -52,21 +49,18 @@ $(document).ready(function() {
     var timeNow = parseInt(currentTimeHours + "" + currentTimeMinutes);
 
     var currentDayID = "#" + currentDay;
-    $(currentDayID).toggleClass("today"); // highlight today
+    $(currentDayID).toggleClass("today");
 
-    // Check if it's Sunday
     if (currentDay === "Sunday") {
         $(".openorclosed").removeClass("open").addClass("closed");
-        return; // Exit the script since Sunday is closed
+        return;
     }
 
-    // Get open and close times for the current day
     var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
     var openTimex = parseInt(openTimeSplit[0] + openTimeSplit[1]);
     var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
     var closeTimex = parseInt(closeTimeSplit[0] + closeTimeSplit[1]);
 
-    // Determine if the current time is within open hours
     if (timeNow >= openTimex && timeNow <= closeTimex) {
         $(".openorclosed").removeClass("closed").addClass("open");
     } else {
@@ -74,7 +68,6 @@ $(document).ready(function() {
     }
 });
 
-// Gallery filtering functionality
 document.addEventListener('DOMContentLoaded', function () {
   const cards = document.querySelectorAll('.gallery-grid .card img');
   const imagePopup = document.getElementById('imagePopup');
@@ -85,29 +78,24 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
   let images = [];
 
-  // Collect all images from the gallery cards
   cards.forEach((card, index) => {
       images.push(card.src);
-      
-      // Add click event to each image
+
       card.addEventListener('click', function () {
           currentIndex = index;
           openModal();
       });
   });
 
-  // Open the modal and display the current image
   function openModal() {
       imagePopup.style.display = 'flex';
       updateCarousel();
   }
 
-  // Close the modal
   closePopup?.addEventListener('click', function () {
       imagePopup.style.display = 'none';
   });
 
-  // Update carousel with the current image
   function updateCarousel() {
       carouselInner.innerHTML = `
           <div class="carousel-item active">
@@ -115,19 +103,16 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>`;
   }
 
-  // Navigate to the previous image
   prev?.addEventListener('click', function () {
       currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
       updateCarousel();
   });
 
-  // Navigate to the next image
   next?.addEventListener('click', function () {
       currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
       updateCarousel();
   });
 
-  // Close the modal when clicking outside the carousel content
   imagePopup?.addEventListener('click', function (e) {
       if (e.target === imagePopup) {
           imagePopup.style.display = 'none';
@@ -140,17 +125,14 @@ document?.addEventListener('DOMContentLoaded', function () {
   const filterButtons = document.querySelectorAll('.gallery-filter button');
   const cards = document.querySelectorAll('.gallery-grid .card');
 
-  // Add event listeners to all filter buttons
   filterButtons.forEach(button => {
       button.addEventListener('click', function () {
           const filterValue = this.getAttribute('data-filter');
 
-          // Remove the 'active' class from all buttons
           filterButtons.forEach(btn => btn.classList.remove('active'));
-          // Add 'active' class to the clicked button
+
           this.classList.add('active');
 
-          // Show/hide cards based on filter
           cards.forEach(card => {
               if (filterValue === 'all' || card.classList.contains(filterValue)) {
                   card.style.display = 'block';
@@ -163,48 +145,39 @@ document?.addEventListener('DOMContentLoaded', function () {
 });
 
 /* TRANSLATION SERVICE */
-let currentLanguage; // Declare the variable to hold the current language
+let currentLanguage;
 
 document.addEventListener('DOMContentLoaded', function () {
     const languageToggleButton = document.getElementById('languageSwitchBtn');
-    const currentLanguageElement = document.getElementById('currentLanguage'); // Declare and assign
+    const currentLanguageElement = document.getElementById('currentLanguage');
 
-    // Add event listener for language toggle
     if (languageToggleButton) {
         languageToggleButton.addEventListener('click', toggleLanguage);
     }
 
-    // Check localStorage for a saved language; if none, default to 'gr'
     const savedLanguage = localStorage.getItem('language');
-    currentLanguage = savedLanguage ? savedLanguage : 'gr'; // Default to 'gr'
+    currentLanguage = savedLanguage ? savedLanguage : 'gr';
 
-    // Check if the currentLanguageElement exists before trying to set textContent
     if (currentLanguageElement) {
         currentLanguageElement.textContent = currentLanguage.toUpperCase();
     }
 
-    // Load translations based on the current language
     loadTranslations(currentLanguage);
 });
 
-// Function to toggle language
 function toggleLanguage() {
     currentLanguage = currentLanguage === 'gr' ? 'en' : 'gr';
-    const currentLanguageElement = document.getElementById('currentLanguage'); // Declare inside function
+    const currentLanguageElement = document.getElementById('currentLanguage');
 
-    // Check if the currentLanguageElement exists before trying to set textContent
     if (currentLanguageElement) {
         currentLanguageElement.textContent = currentLanguage.toUpperCase();
     }
 
-    // Store the selected language in localStorage
     localStorage.setItem('language', currentLanguage);
 
-    // Load translations for the selected language
     loadTranslations(currentLanguage);
 }
 
-// Load translations based on the current language
 function loadTranslations(language) {
     const url = `/assets/${language}.json`;
     fetch(url)
@@ -213,12 +186,10 @@ function loadTranslations(language) {
         .catch(error => console.error('Error loading translations:', error));
 }
 
-// Function to get nested translation
 function getNestedTranslation(key, translations) {
     return key.split('.').reduce((obj, k) => (obj ? obj[k] : null), translations);
 }
 
-// Function to update text elements
 function updateText(translations) {
     const elements = document.querySelectorAll('[data-translate]');
 
@@ -232,12 +203,10 @@ function updateText(translations) {
     });
 }
 
-// Load default language on page load (if not already handled)
 window.addEventListener('load', function() {
-    // Set current language and update the display
     const savedLanguage = localStorage.getItem('language');
     currentLanguage = savedLanguage ? savedLanguage : 'gr';
-    const currentLanguageElement = document.getElementById('currentLanguage'); // Declare here too
+    const currentLanguageElement = document.getElementById('currentLanguage');
 
     if (currentLanguageElement) {
         currentLanguageElement.textContent = currentLanguage.toUpperCase();
