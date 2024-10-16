@@ -122,27 +122,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document?.addEventListener('DOMContentLoaded', function () {
-  const filterButtons = document.querySelectorAll('.gallery-filter button');
-  const cards = document.querySelectorAll('.gallery-grid .card');
+    const filterButtons = document.querySelectorAll('.gallery-filter button');
+    const cards = document.querySelectorAll('.gallery-grid .card');
 
-  filterButtons.forEach(button => {
-      button.addEventListener('click', function () {
-          const filterValue = this.getAttribute('data-filter');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const filterValue = this.getAttribute('data-filter');
 
-          filterButtons.forEach(btn => btn.classList.remove('active'));
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
 
-          this.classList.add('active');
+            cards.forEach(card => {
+                if (filterValue === 'all' || card.classList.contains(filterValue)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
 
-          cards.forEach(card => {
-              if (filterValue === 'all' || card.classList.contains(filterValue)) {
-                  card.style.display = 'block';
-              } else {
-                  card.style.display = 'none';
-              }
-          });
-      });
-  });
+    // Dropdown filter functionality
+    const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetCheck = this.getAttribute('data-check');
+
+            document.getElementById(targetCheck).checked = true;
+
+            document.querySelector(`label[for=${targetCheck}]`).click();
+        });
+    });
 });
+
 
 /* TRANSLATION SERVICE */
 let currentLanguage;

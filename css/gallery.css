@@ -91,7 +91,6 @@ input {
 }
 
 .pic::before {
-  content: "PHOTO GALLERY";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -194,4 +193,53 @@ input {
   transform: scale(0);
   position: absolute;
   transition: 0s;
+}
+
+/* Hide the dropdown by default */
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .top-content label:not([for="check1"]) {
+    display: none; /* Hide all except "All Photos" */
+  }
+
+  .dropdown {
+    display: inline-block; /* Show the dropdown */
+  }
+
+  /* Dropdown button styling */
+  .dropdown-toggle {
+    background: darkorange;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dropdown-toggle:focus {
+    box-shadow: none;
+  }
+
+  .dropdown-menu {
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 100px;
+  }
+
+  .dropdown-item {
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+  }
+
+  .dropdown-item:hover {
+    background-color: lightgray;
+  }
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    grid-gap: 10px; /* Reduce the gap for smaller screens if needed */
+  }
 }
