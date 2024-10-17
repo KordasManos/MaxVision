@@ -361,3 +361,11 @@ video {
   color: black;
   font-weight: 800;
 }
+
+@media only screen and (max-width: 576px) {
+  .disclaimer-section > p {
+    font-size: xx-small;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}

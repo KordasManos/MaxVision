@@ -195,9 +195,41 @@ input {
   transition: 0s;
 }
 
-/* Hide the dropdown by default */
-.dropdown {
+/* Only target dropdown in gallery section */
+.gallery-page .gallery-dropdown {
   display: none;
+}
+
+.gallery-page .gallery-dropdown .dropdown-toggle {
+  background: darkorange;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gallery-page .gallery-dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.gallery-page .gallery-dropdown .dropdown-menu {
+  background-color: white;
+  border: 1px solid lightgray;
+  width: 100px;
+}
+
+.gallery-page .gallery-dropdown .dropdown-item {
+  cursor: pointer;
+  color: black;
+  padding: 10px;
+}
+
+.gallery-page .gallery-dropdown .dropdown-item:hover {
+  background-color: lightgray;
+}
+
+@media (max-width: 576px) {
 }
 
 @media (max-width: 576px) {
@@ -205,12 +237,17 @@ input {
     display: none; /* Hide all except "All Photos" */
   }
 
-  .dropdown {
-    display: inline-block; /* Show the dropdown */
+  .gallery-page .dropdown {
+    display: inline-block; /* Show the dropdown on small screens */
+  }
+
+  .gallery-page .photo-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    grid-gap: 10px; /* Reduce the gap for smaller screens */
   }
 
   /* Dropdown button styling */
-  .dropdown-toggle {
+  .gallery-page .dropdown-toggle {
     background: darkorange;
     border: none;
     color: white;
@@ -219,26 +256,27 @@ input {
     cursor: pointer;
   }
 
-  .dropdown-toggle:focus {
+  .gallery-page .dropdown-toggle:focus {
     box-shadow: none;
   }
 
-  .dropdown-menu {
+  .gallery-page .dropdown-menu {
     background-color: white;
     border: 1px solid lightgray;
     width: 100px;
   }
 
-  .dropdown-item {
+  .gallery-page .dropdown-item {
     cursor: pointer;
     color: black;
     padding: 10px;
   }
 
-  .dropdown-item:hover {
+  .gallery-page .dropdown-item:hover {
     background-color: lightgray;
   }
-  .photo-gallery {
+
+  .gallery-page .photo-gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     grid-gap: 10px; /* Reduce the gap for smaller screens if needed */
   }

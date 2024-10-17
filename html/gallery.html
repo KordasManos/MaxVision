@@ -26,54 +26,55 @@
         <div class="video-tint"></div>
     </div>
 
-    <input type="radio" name="Photos" id="check1" checked>
-    <input type="radio" name="Photos" id="check2">
-    <input type="radio" name="Photos" id="check3">
-    <input type="radio" name="Photos" id="check4">
-    <input type="radio" name="Photos" id="check5">
+    <div class="gallery-page">
+        <input type="radio" name="Photos" id="check1" checked>
+        <input type="radio" name="Photos" id="check2">
+        <input type="radio" name="Photos" id="check3">
+        <input type="radio" name="Photos" id="check4">
+        <input type="radio" name="Photos" id="check5">
 
-    <div class="gallery-container">
-        <h1>OUR PHOTO GALLERY</h1>
-        <div class="top-content">
-            <label for="check1">All Photos</label>
+        <div class="gallery-container">
+            <h1>OUR PHOTO GALLERY</h1>
+            <div class="top-content">
+                <label for="check1">All Photos</label>
 
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownTestButton"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownTestButton">
-                    <li><a class="dropdown-item" href="#" data-check="check2">Cleaning</a></li>
-                    <li><a class="dropdown-item" href="#" data-check="check3">Polishing</a></li>
-                    <li><a class="dropdown-item" href="#" data-check="check4">Ceramic Coating</a></li>
-                    <li><a class="dropdown-item" href="#" data-check="check5">PPF</a></li>
-                </ul>
+                <div class="dropdown gallery-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownTestButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownTestButton">
+                        <li><a class="dropdown-item" href="#" data-check="check2">Cleaning</a></li>
+                        <li><a class="dropdown-item" href="#" data-check="check3">Polishing</a></li>
+                        <li><a class="dropdown-item" href="#" data-check="check4">Ceramic Coating</a></li>
+                        <li><a class="dropdown-item" href="#" data-check="check5">PPF</a></li>
+                    </ul>
+                </div>
+                <!-- Labels for Large Screens -->
+                <label for="check2">Cleaning</label>
+                <label for="check3">Polishing</label>
+                <label for="check4">Ceramic Coating</label>
+                <label for="check5">PPF</label>
             </div>
 
-            <!-- Labels for Large Screens -->
-            <label for="check2">Cleaning</label>
-            <label for="check3">Polishing</label>
-            <label for="check4">Ceramic Coating</label>
-            <label for="check5">PPF</label>
-        </div>
-
-        <div class="photo-gallery">
-            <div class="pic polishing">
-                <img src="/assets/images/profile-audi.jpg" alt="profile-audi">
-            </div>
-            <div class="pic polishing">
-                <img src="/assets/images/profile-lambo.jpg" alt="profile-lambo">
-            </div>
-            <div class="pic cleaning">
-                <img src="/assets/images/interior-cleaning.jpeg" alt="interior-cleaning">
-            </div>
-            <div class="pic ceramic">
-                <img src="/assets/images/ceramic-coating.jpg" alt="ceramic-coating">
-            </div>
-            <div class="pic cleaning">
-                <img src="/assets/images/profile-shop.jpeg" alt="profile-shop">
-            </div>
-            <div class="pic ppf">
-                <img src="/assets/images/ppf.jpg" alt="ppf">
+            <div class="photo-gallery">
+                <div class="pic polishing">
+                    <img src="/assets/images/profile-audi.jpg" alt="profile-audi">
+                </div>
+                <div class="pic polishing">
+                    <img src="/assets/images/profile-lambo.jpg" alt="profile-lambo">
+                </div>
+                <div class="pic cleaning">
+                    <img src="/assets/images/interior-cleaning.jpeg" alt="interior-cleaning">
+                </div>
+                <div class="pic ceramic">
+                    <img src="/assets/images/ceramic-coating.jpg" alt="ceramic-coating">
+                </div>
+                <div class="pic cleaning">
+                    <img src="/assets/images/profile-shop.jpeg" alt="profile-shop">
+                </div>
+                <div class="pic ppf">
+                    <img src="/assets/images/ppf.jpg" alt="ppf">
+                </div>
             </div>
         </div>
     </div>
