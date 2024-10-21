@@ -84,3 +84,100 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.polishing-section {
+  background-color: #f0efef;
+  opacity: 0.8;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  justify-content: space-around;
+}
+
+.polishing-price-item {
+  border-radius: 15px;
+  background-color: #fff;
+  height: auto;
+  margin-bottom: 10vh;
+  width: 20%;
+}
+
+.polishing-price-item > ul {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .polishing-price-item {
+    margin-bottom: 2rem;
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .polishing-price-item {
+    font-size: small;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  .prices-header h1 {
+    font-size: larger;
+    font-weight: 800;
+  }
+  .polishing-info h2 {
+    font-size: large;
+    font-weight: 800;
+  }
+  .polishing-info p {
+    font-size: xx-small;
+  }
+  .wax-banner,
+  .headlight-polishing-banner {
+    display: none;
+  }
+
+  .text-start-1 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/car-polishing.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-start-2 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/ceramic-coating.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-start-1 h1,
+  .text-start-1 h2,
+  .text-start-2 h1,
+  .text-start-2 h2 {
+    font-weight: 800;
+  }
+}
+
+.euro-symbol {
+  font-size: 24px;
+  vertical-align: super;
+  margin-right: 5px;
+}
+
+.price-header-line {
+  width: 33%;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto; /* Centers the line horizontally */
+}
+
+.row-with-2-items {
+  display: flex;
+  justify-content: space-evenly;
+}

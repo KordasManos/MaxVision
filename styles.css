@@ -354,7 +354,9 @@ video {
 
 .prices-header {
   text-align: center;
+  font-weight: 800;
   padding-bottom: 5vh;
+  padding-top: 1rem;
 }
 
 .prices-header h1 {
@@ -377,6 +379,21 @@ video {
 }
 
 @media only screen and (max-width: 576px) {
+  .disclaimer-section {
+    width: 80%;
+    justify-content: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  .disclaimer-section > p {
+    font-size: xx-small;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .disclaimer-section {
     width: 80%;
     justify-content: center;
