@@ -32,12 +32,6 @@
   margin-bottom: 10vw;
 }
 
-.coating-a-new-car-container > .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .coating-a-new-car-container > .row > .col-5 > h1 {
   color: #000000;
   font-weight: 800;
@@ -145,15 +139,9 @@
 .ceramic-price-item {
   border-radius: 15px;
   background-color: #fff;
-  height: 120vh;
+  height: auto;
   margin-bottom: 10vh;
   width: 20%;
-  margin-right: 10vh;
-}
-
-.ceramic-prices-container > .row {
-  display: flex;
-  justify-content: center;
 }
 
 .ceramic-prices-section {
@@ -164,4 +152,37 @@
   margin-top: 10vw;
   margin-bottom: 10vw;
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 576px) {
+  .ceramic-coating-info h2 {
+    font-size: large;
+    font-weight: 800;
+  }
+  .ceramic-coating-info p {
+    font-size: xx-small;
+  }
+  .ceramic-price-item {
+    font-size: small;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  .ceramic-image {
+    height: 140px;
+  }
+  .prices-header h1 {
+    font-size: larger;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+  .ceramic-price-item {
+    margin-bottom: 2rem;
+    width: 25%;
+  }
+  .ceramic-image {
+    height: 20rem;
+    width: 35%;
+  }
 }

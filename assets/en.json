@@ -56,6 +56,12 @@
     "headlight_section_header_2": "POLISHING",
     "headlight_section_p": "Restore dull headlights to their original brightness, this can be done by means of sanding and polishing techniques. Polishing headlights is also suitable if your car failed the technical inspection due to unclear light image."
   },
+  "ceramic_coating": {
+    "ceramic_info_header_1": "CAR COATING",
+    "ceramic_info_header_2": "LABOCOSMETICA",
+    "ceramic_info_p_1": "MaxVision Car Detail is a certified installer of Labocosmetica, located in Argyroupoli (Athens). This ceramic coating, also called glass coating or nano coating, forms an extra hard top layer over the existing paint layer of the car. The layer adheres to the surface and has a lifespan of 2 to 3 years with correct maintenance , much longer than a traditional wax!",
+    "ceramic_info_p_2": "Coating your car has a lot of advantages. Not only does a glass coating provide super easy maintenance, it also offers a huge shine and you keep the new look much longer!"
+  },
   "car_cleaning": "Car Cleaning",
   "&detailing": " & Detailing",
   "interior": "Interior",

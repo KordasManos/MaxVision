@@ -86,11 +86,6 @@
   font-weight: 800;
 }
 
-.row-with-3-items {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .interior-cleaning-price-item {
   border-radius: 15px;
   background-color: #fff;

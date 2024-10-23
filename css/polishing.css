@@ -176,8 +176,3 @@
   background-color: black;
   margin: 0 auto; /* Centers the line horizontally */
 }
-
-.row-with-2-items {
-  display: flex;
-  justify-content: space-evenly;
-}

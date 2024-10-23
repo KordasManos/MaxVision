@@ -378,6 +378,16 @@ video {
   font-size: x-small;
 }
 
+.row-with-2-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-with-3-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 576px) {
   .disclaimer-section {
     width: 80%;
