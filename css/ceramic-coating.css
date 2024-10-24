@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
 }
 
-.coating-a-new-car-section {
+/* .coating-a-new-car-section {
   background-color: #f0f1f4;
   opacity: 0.8;
   width: 100vw;
@@ -45,7 +45,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 /*--------- Coating Services ----------------*/
 .coating-rims-section {
@@ -173,6 +173,53 @@
   .prices-header h1 {
     font-size: larger;
     font-weight: 800;
+  }
+  .coating-rims-banner,
+  .coating-windows-banner,
+  .coating-plastic-parts-banner {
+    display: none;
+  }
+
+  .coating-text-start-1 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/profile-audi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .coating-text-start-2 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/ceramic-coating.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .coating-text-start-3 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/banner-lambo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .coating-text-start-1 h1,
+  .coating-text-start-1 h2,
+  .coating-text-start-2 h1,
+  .coating-text-start-2 h2 {
+    font-weight: 800;
+  }
+
+  .coating-rims-section,
+  .coating-windows-section {
+    padding-bottom: 1rem;
   }
 }
 
