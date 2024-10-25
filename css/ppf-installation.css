@@ -25,15 +25,6 @@
 }
 
 .ppf-prices-section {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
-
-.ppf-prices-section > .row {
-  justify-content: center;
-}
-
-.ppf-prices-section {
   background-color: #f0efef;
   opacity: 0.8;
   width: 100vw;
@@ -43,18 +34,12 @@
   justify-content: space-around;
 }
 
-.ppf-prices-container > .row {
-  display: flex;
-  justify-content: center;
-}
-
 .ppf-price-item {
   border-radius: 15px;
   background-color: #fff;
-  height: 90vh;
+  height: auto;
   margin-bottom: 10vh;
   width: 20%;
-  margin-right: 10vh;
 }
 
 .ppf-pros-n-cons-section {
@@ -100,4 +85,89 @@
 
 .ppf-pros-info > p {
   color: black;
+}
+
+@media only screen and (max-width: 576px) {
+  .ppf-installation-info h2 {
+    font-size: large;
+    font-weight: 800;
+  }
+  .ppf-installation-info p {
+    font-size: xx-small;
+  }
+  .ppf-installation-image,
+  .ppf-pros-n-cons-image {
+    height: 140px;
+  }
+
+  .prices-header h1 {
+    font-size: larger;
+    font-weight: 800;
+  }
+
+  .ppf-price-item {
+    font-size: small;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+
+  /*
+  .coating-rims-banner,
+  .coating-windows-banner,
+  .coating-plastic-parts-banner {
+    display: none;
+  }
+
+  .coating-text-start-1 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/profile-audi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .coating-text-start-2 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/ceramic-coating.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .coating-text-start-3 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/banner-lambo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .coating-text-start-1 h1,
+  .coating-text-start-1 h2,
+  .coating-text-start-2 h1,
+  .coating-text-start-2 h2 {
+    font-weight: 800;
+  }
+
+  .coating-rims-section,
+  .coating-windows-section {
+    padding-bottom: 1rem;
+  } */
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+  .ppf-price-item {
+    margin-bottom: 2rem;
+    width: 25%;
+  }
+  .ppf-installation-image {
+    height: 20rem;
+    width: 35%;
+  }
 }

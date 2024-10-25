@@ -24,29 +24,6 @@
   background-repeat: no-repeat;
 }
 
-/* .coating-a-new-car-section {
-  background-color: #f0f1f4;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-bottom: 10vw;
-}
-
-.coating-a-new-car-container > .row > .col-5 > h1 {
-  color: #000000;
-  font-weight: 800;
-}
-
-.coating-a-new-car-banner {
-  height: 30vw;
-  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
-    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
 /*--------- Coating Services ----------------*/
 .coating-rims-section {
   background-color: #f0f1f4;
