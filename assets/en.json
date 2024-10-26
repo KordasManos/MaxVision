@@ -101,6 +101,16 @@
     "parts_section_p_1": "Restores and protects the original appearance of plastic trim, moldings and rubbers against UV radiation and oxidation",
     "parts_section_p_2": "Average lifespan: up to 12 month"
   },
+  "footer": {
+    "about_us_header": "About us",
+    "about_us_p": "Max Vision Auto Detail is located in Argiroupoli (Athens, GR). We offer a total package of professional car detailing services: car coating, polishing, interior cleaning, sales of detailing products and more",
+    "location_1_header": "Address",
+    "location_1_p": "Leof. Kiprou 160, Argiroupoli 164 52",
+    "location_2_header": "Contacts",
+    "location_2_p_A": "Email: maxvisionautodetailing@gmail.com",
+    "location_2_p_B": "Phone: 213 0477412",
+    "copyright": "© 2023 Max Vision Auto Detailing. All rights reserved"
+  },
   "car_cleaning": "Car Cleaning",
   "&detailing": " & Detailing",
   "interior": "Interior",
