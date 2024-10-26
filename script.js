@@ -212,7 +212,7 @@ function updateText(translations) {
         const translation = getNestedTranslation(key, translations);
         
         if (translation) {
-            element.textContent = translation;
+            element.innerHTML = translation;
         }
     });
 }
