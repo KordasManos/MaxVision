@@ -40,22 +40,29 @@
     "polishing_info_p": "For removing (washing) scratches and other imperfections, MaxVision Car Detail is the right place for you. We make a distinction between a light and heavy polishing treatment. Which treatment is suitable for polishing your car depends on the condition of the paint and of course the desired result. Feel free to contact us for a quote or feel free to visit our location.",
     "prices_header": "CAR POLISHING PRICES",
     "price_header_1": "Light Polish",
+    "price_tag_1": "<span class='euro-symbol'>€</span>495",
     "price_list_1_A": "1-step polishing",
     "price_list_1_B": "Removing very light scratches",
     "price_list_1_C": "Provides optimum shine",
     "price_list_1_D": "Recommended for cars with very light signs of use or new cars",
+    "price_star_list_1_A": "Sedan/station from<strong>+€75</strong>",
+    "price_star_list_1_B": "Jeep/SUV from<strong>+€145</strong>",
     "price_header_2": "Heavy Polish",
+    "price_tag_2": "<span class='euro-symbol'>€</span>795",
     "price_list_2_A": "Multi-step polishing",
     "price_list_2_B": "Removing medium to deep (wash) scratches",
     "price_list_2_C": "Removing oxidation, streaks, holograms,…",
     "price_list_2_D": "Provides optimum shine",
     "price_list_2_E": "Recommended for cars with heavy wear and tears",
+    "price_star_list_2_A": "Sedan/station from<strong>+€95</strong>",
+    "price_star_list_2_B": "Jeep/SUV from<strong>+€195</strong>",
     "wax_section_header_1": "CARNAUBA WAX OR",
     "wax_section_header_2": "CERAMIC COATING",
     "wax_section_p": "Each polishing treatment is finished with a high-quality wax as standard to protect the paintwork. If you are interested in having your car polished and then protected with a coating, be sure to take a look at our ceramic coating treatments. These treatments are offered as package prices and also include a polishing treatment.",
     "headlight_section_header_1": "HEADLIGHT",
     "headlight_section_header_2": "POLISHING",
-    "headlight_section_p": "Restore dull headlights to their original brightness, this can be done by means of sanding and polishing techniques. Polishing headlights is also suitable if your car failed the technical inspection due to unclear light image."
+    "headlight_section_p_1": "Restore dull headlights to their original brightness, this can be done by means of sanding and polishing techniques. Polishing headlights is also suitable if your car failed the technical inspection due to unclear light image.",
+    "headlight_section_p_2": "<strong>From €45/headlamp</strong>"
   },
   "ceramic_coating": {
     "ceramic_info_header_1": "CAR COATING",
@@ -151,5 +158,6 @@
   "starting_price": "/starting price",
   "oversize_on_request": "Oversize only on request",
   "next": "Next",
-  "previous": "Previous"
+  "previous": "Previous",
+  "gr": "GR"
 }
