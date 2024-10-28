@@ -122,6 +122,14 @@
     "parts_section_p_2": "Average lifespan: up to 12 month",
     "parts_section_p_3": "<strong>from €60 excl. VAT</strong>"
   },
+  "gallery": {
+    "header": "OUR PHOTO GALLERY",
+    "check_1": "All Photos",
+    "check_2": "Cleaning",
+    "check_3": "Polishing",
+    "check_4": "Ceramic Coating",
+    "check_5": "PPF"
+  },
   "contact": {
     "contact_info_header": "CONTACT US",
     "contact_info_p_1": "Would you like to receive a free quote or do you have a question regarding our products or services? Feel free to visit us or contact us via the info below.",
@@ -132,23 +140,7 @@
     "email_p": "maxvisionautodetailing@gmail.com",
     "telephone_header": "Telephone",
     "telephone_p": "213 0477412",
-    "hours_header": "Opening hours",
-    "m": "Heavy Polish",
-    "price_tag_2": "<span class='euro-symbol'>€</span>795",
-    "price_list_2_A": "Multi-step polishing",
-    "price_list_2_B": "Removing medium to deep (wash) scratches",
-    "price_list_2_C": "Removing oxidation, streaks, holograms,…",
-    "price_list_2_D": "Provides optimum shine",
-    "price_list_2_E": "Recommended for cars with heavy wear and tears",
-    "price_star_list_2_A": "Sedan/station from<strong>+€95</strong>",
-    "price_star_list_2_B": "Jeep/SUV from<strong>+€195</strong>",
-    "wax_section_header_1": "CARNAUBA WAX OR",
-    "wax_section_header_2": "CERAMIC COATING",
-    "wax_section_p": "Each polishing treatment is finished with a high-quality wax as standard to protect the paintwork. If you are interested in having your car polished and then protected with a coating, be sure to take a look at our ceramic coating treatments. These treatments are offered as package prices and also include a polishing treatment.",
-    "headlight_section_header_1": "HEADLIGHT",
-    "headlight_section_header_2": "POLISHING",
-    "headlight_section_p_1": "Restore dull headlights to their original brightness, this can be done by means of sanding and polishing techniques. Polishing headlights is also suitable if your car failed the technical inspection due to unclear light image.",
-    "headlight_section_p_2": "<strong>From €45/headlamp</strong>"
+    "hours_header": "Opening hours"
   },
   "footer": {
     "about_us_header": "About us",
