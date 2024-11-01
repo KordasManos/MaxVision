@@ -150,9 +150,13 @@ document?.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const targetCheck = this.getAttribute('data-check');
 
-            document.getElementById(targetCheck).checked = true;
-
-            document.querySelector(`label[for=${targetCheck}]`).click();
+            const checkbox = document.getElementById(targetCheck);
+            if (checkbox) {  // Check if the element exists
+                checkbox.checked = true;
+                document.querySelector(`label[for=${targetCheck}]`).click();
+            } else {
+                console.warn(`Element with id "${targetCheck}" not found.`);
+            }
         });
     });
 });

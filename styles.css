@@ -67,14 +67,14 @@ video {
 
 .service-item-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/images/interior-cleaning.jpeg);
+    url(assets/images/interior-cleaning.jpeg);
   background-size: cover;
   background-position: center;
   height: 23vh;
 }
 .service-item-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/images/car-polishing.jpeg);
+    url(assets/images/car-polishing.jpeg);
   background-size: cover;
   background-position: center;
   height: 23vh;
@@ -82,7 +82,7 @@ video {
 
 .service-item-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/images/ceramic-coating.jpg);
+    url(assets/images/ceramic-coating.jpg);
   background-size: cover;
   background-position: center;
   height: 23vh;
@@ -90,7 +90,7 @@ video {
 
 .service-item-4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/images/ppf.jpg);
+    url(assets/images/ppf.jpg);
   background-size: cover;
   background-position: center;
   height: 23vh;
@@ -303,7 +303,7 @@ video {
   height: 20vw;
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(../assets/images/banner-lambo.jpeg);
+    url(assets/images/banner-lambo.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

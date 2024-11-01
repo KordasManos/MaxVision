@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-translate="title"></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/footer.css" />
-  <link rel="icon" href="/assets/images/profile-trans.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="icon" href="assets/images/profile-trans.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
@@ -19,8 +19,9 @@
 
   <!-- video -->
   <div class="video-container">
-    <video autoplay muted loop id="video-bg">
-      <source src="/assets/videos/site_reel.mp4" type="video/mp4" />
+    <video autoplay muted loop id="video-bg" playsinline>
+      <source src="assets/videos/site_reel.mp4" type="video/mp4" />
+      <source src="assets/videos/site_reel_1.mp4" type="video/mp4" />
     </video>
     <div class="video-tint"></div>
   </div>
@@ -42,7 +43,7 @@
         <div class="row">
 
           <div class="col-md-3 col-sm-6 col-xs-12 pb-3">
-            <a href="/html/interior-cleaning.html">
+            <a href="html/interior-cleaning.html">
               <div class="service-item service-item-1">
                 <div class="service-title">
                   <span class="first-word" data-translate="interior"></span>
@@ -54,7 +55,7 @@
 
 
           <div class="col-md-3 col-sm-6 col-xs-12 pb-3">
-            <a href="/html/polishing.html">
+            <a href="html/polishing.html">
               <div class="service-item service-item-2">
                 <div class="service-title">
                   <span class="first-word" data-translate="car_polishing_1"></span>
@@ -66,7 +67,7 @@
 
 
           <div class="col-md-3 col-sm-6 col-xs-12 pb-3">
-            <a href="/html/ceramic-coating.html">
+            <a href="html/ceramic-coating.html">
               <div class="service-item service-item-3">
                 <div class="service-title">
                   <span class="first-word" data-translate="ceramic"></span>
@@ -77,7 +78,7 @@
           </div>
 
           <div class="col-md-3 col-sm-6 col-xs-12 pb-3">
-            <a href="/html/ppf-installation.html">
+            <a href="html/ppf-installation.html">
               <div class="service-item service-item-4">
                 <div class="service-title">
                   <span class="first-word" data-translate="ppf_installation_1"></span>
@@ -152,17 +153,17 @@
   <div id="footer"></div>
 
   <script>
-    document.getElementById('navbar').innerHTML = fetch('/html/navbar.html')
+    document.getElementById('navbar').innerHTML = fetch('html/navbar.html')
       .then(response => response.text())
       .then(data => document.getElementById('navbar').innerHTML = data);
 
-    document.getElementById('footer').innerHTML = fetch('/html/footer.html')
+    document.getElementById('footer').innerHTML = fetch('html/footer.html')
       .then(response => response.text())
       .then(data => document.getElementById('footer').innerHTML = data);
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
