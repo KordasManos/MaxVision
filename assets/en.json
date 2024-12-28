@@ -1,13 +1,13 @@
 {
   "navbar": {
-    "home": "Home",
-    "services": "Services",
-    "interior_cleaning": "Interior Cleaning",
-    "polishing": "Polishing",
-    "coating_labocosmetica": "Coating - LABOCOSMETICA",
-    "ppf_installation": "PPF Installation",
-    "gallery": "Gallery",
-    "contact": "Contact"
+    "home": "HOME",
+    "services": "SERVICES",
+    "interior_cleaning": "INTERIOR CLEANING",
+    "polishing": "POLISHING",
+    "coating_labocosmetica": "COATING - LABOCOSMETICA",
+    "ppf_installation": "PPF INSTALLATION",
+    "gallery": "GALLERY",
+    "contact": "CONTACT"
   },
   "interior_cleaning": {
     "info_title": "CAR INTERIOR DEEP CLEANING",
