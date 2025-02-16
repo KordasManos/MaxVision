@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   if (videoThumbnail) {
     videoThumbnail.addEventListener('click', function() {
-      var videoID = 'kLtlUzhgmig';
+      var videoID = "IuurRHcORwc";
       videoFrame.src = 'https://www.youtube.com/embed/' + videoID + '?autoplay=1';
       videoPopup.style.display = 'flex';
     });

@@ -2,14 +2,15 @@
   "navbar": {
     "home": "HOME",
     "services": "SERVICES",
-    "interior_cleaning": "INTERIOR CLEANING",
+    "interior_care": "INTERIOR CARE",
     "polishing": "POLISHING",
-    "coating_labocosmetica": "COATING - LABOCOSMETICA",
+    "ceramic_coating": "CERAMIC COATING",
+    "moto_care": "MOTORCYCLE CARE",
     "ppf_installation": "PPF INSTALLATION",
     "gallery": "GALLERY",
     "contact": "CONTACT"
   },
-  "interior_cleaning": {
+  "interior_care": {
     "info_title": "CAR INTERIOR DEEP CLEANING",
     "info_paragraph_1": "The entire interior and trunk are deep/steam cleaned. Leather upholstery is cleaned with a pH neutral leather cleaner and then treated with a conditioner. Carpets, mats and fabric seats are deep cleaned and shampoo extracted. Dashboard, center console and door panels are cleaned and then protected with a dressing to obtain their original appearance. The windows are cleaned streak-free.",
     "info_paragraph_2": "In case of serious pollution or a lot of dog/cat hair, an additional charge may be made. Request a free quote by contacting us by email or visit our location without obligation.",
@@ -36,7 +37,7 @@
     "before_after_message": "Hover over the images to view the result."
   },
   "polishing": {
-    "polishing_info_header": "CAR POLISHING",
+    "one_stage": "CAR POLISHING",
     "polishing_info_p": "For removing (washing) scratches and other imperfections, MaxVision Car Detail is the right place for you. We make a distinction between a light and heavy polishing treatment. Which treatment is suitable for polishing your car depends on the condition of the paint and of course the desired result. Feel free to contact us for a quote or feel free to visit our location.",
     "prices_header": "CAR POLISHING PRICES",
     "price_header_1": "Light Polish",
@@ -56,12 +57,12 @@
     "price_list_2_E": "Recommended for cars with heavy wear and tears",
     "price_star_list_2_A": "Sedan/station from<strong>+€95</strong>",
     "price_star_list_2_B": "Jeep/SUV from<strong>+€195</strong>",
-    "wax_section_header_1": "CARNAUBA WAX OR",
+    "step_1_header": "CARNAUBA WAX OR",
     "wax_section_header_2": "CERAMIC COATING",
-    "wax_section_p": "Each polishing treatment is finished with a high-quality wax as standard to protect the paintwork. If you are interested in having your car polished and then protected with a coating, be sure to take a look at our ceramic coating treatments. These treatments are offered as package prices and also include a polishing treatment.",
-    "headlight_section_header_1": "HEADLIGHT",
+    "step_1_body": "Each polishing treatment is finished with a high-quality wax as standard to protect the paintwork. If you are interested in having your car polished and then protected with a coating, be sure to take a look at our ceramic coating treatments. These treatments are offered as package prices and also include a polishing treatment.",
+    "step_2_header": "HEADLIGHT",
     "headlight_section_header_2": "POLISHING",
-    "headlight_section_p_1": "Restore dull headlights to their original brightness, this can be done by means of sanding and polishing techniques. Polishing headlights is also suitable if your car failed the technical inspection due to unclear light image.",
+    "step_2_body": "Restore dull headlights to their original brightness, this can be done by means of sanding and polishing techniques. Polishing headlights is also suitable if your car failed the technical inspection due to unclear light image.",
     "headlight_section_p_2": "<strong>From €45/headlamp</strong>"
   },
   "ceramic_coating": {

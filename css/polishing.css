@@ -31,7 +31,7 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background-color: #f8f9fa;
-  margin-top: 10vw;
+  /* margin-top: 10vw; */
 }
 
 .wax-container > .row {
@@ -61,7 +61,7 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background-color: #f8f9fa;
-  margin-bottom: 10vw;
+  /* margin-bottom: 10vw; */
 }
 
 .headlight-polishing-container > .row {
