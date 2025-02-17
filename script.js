@@ -7,28 +7,30 @@ window.addEventListener('scroll', function () {
   }
 });
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener("DOMContentLoaded", function () {
+  const videoThumbnails = document.querySelectorAll(".video-thumbnail");
+  const videoPopup = document.getElementById("videoPopup");
+  const videoFrame = document.getElementById("videoFrame");
 
-  const videoThumbnail = document.getElementById('videoThumbnail');
-  const videoPopup = document.getElementById('videoPopup');
-  const videoFrame = document.getElementById('videoFrame');
-
-  if (videoThumbnail) {
-    videoThumbnail.addEventListener('click', function() {
-      var videoID = "IuurRHcORwc";
-      videoFrame.src = 'https://www.youtube.com/embed/' + videoID + '?autoplay=1';
-      videoPopup.style.display = 'flex';
+  videoThumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", function () {
+      const videoID = thumbnail.getAttribute("data-video-id");
+      videoFrame.src = `https://www.youtube.com/embed/${videoID}?autoplay=1`;
+      videoPopup.style.display = "flex";
     });
-  }
+  });
 
+  // Close popup logic
   if (videoPopup) {
-    videoPopup.addEventListener('click', function(e) {
-      if (e.target !== this) return;
-      videoFrame.src = ''; // Stop the video
-      videoPopup.style.display = 'none';
+    videoPopup.addEventListener("click", function (e) {
+      if (e.target !== this) return; // Ensure we only close when clicking outside the iframe
+      videoFrame.src = ""; // Stop the video
+      videoPopup.style.display = "none";
     });
   }
 });
+
+
 
 $(document).ready(function() {
     var currentDate = new Date();

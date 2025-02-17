@@ -1,4 +1,3 @@
-/* -------------------- Polishing Page -------------------------- */
 .row-polishing-info {
   display: flex;
   justify-content: space-evenly;
@@ -10,120 +9,66 @@
   color: #000000;
 }
 
-.star-list {
-  list-style: none;
-  padding-top: 7vh;
-}
-
-.star-list li::before {
-  content: "★";
-  margin-right: 8px;
-  color: black;
-}
-
-.star-list strong {
-  font-weight: 800;
-}
-
-.wax-section {
+.step-section {
   background-color: #f0f1f4;
   opacity: 0.8;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background-color: #f8f9fa;
-  /* margin-top: 10vw; */
 }
 
-.wax-container > .row {
+.step-container > .row {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.wax-container > .row > .col-5 > h1 {
+.step-container > .row > .col-5 > h1 {
   color: #000000;
   font-weight: 800;
 }
 
-.wax-banner {
-  height: 30vw;
+.step-banner {
+  height: 20vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.step-1 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-coating.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.headlight-polishing-section {
-  background-color: #f0f1f4;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #f8f9fa;
-  /* margin-bottom: 10vw; */
-}
-
-.headlight-polishing-container > .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.headlight-polishing-container > .row > .col-5 > h1 {
-  color: #000000;
-  font-weight: 800;
-}
-
-.headlight-polishing-banner {
-  height: 30vw;
+.step-2 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/car-polishing.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.polishing-section {
-  background-color: #f0efef;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  justify-content: space-around;
+.step-3 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
 }
 
-.polishing-price-item {
-  border-radius: 15px;
-  background-color: #fff;
-  height: auto;
-  margin-bottom: 10vh;
-  width: 20%;
+.step-4 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
 }
 
-.polishing-price-item > ul {
-  margin-bottom: 3rem;
+.step-5 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
 }
 
-@media only screen and (max-width: 1024px) {
-  .polishing-price-item {
-    margin-bottom: 2rem;
-    width: 25%;
-  }
-}
+
+/* -------------------- RESPONSIVE -------------------------- */
 
 @media only screen and (max-width: 576px) {
-  .polishing-price-item {
-    font-size: small;
-    margin-bottom: 2rem;
-    width: 80%;
-  }
-  .prices-header h1 {
-    font-size: larger;
-    font-weight: 800;
-  }
   .polishing-info h2 {
     font-size: large;
     font-weight: 800;
@@ -131,8 +76,7 @@
   .polishing-info p {
     font-size: xx-small;
   }
-  .wax-banner,
-  .headlight-polishing-banner {
+  .step-banner {
     display: none;
   }
 
@@ -162,17 +106,4 @@
   .text-start-2 h2 {
     font-weight: 800;
   }
-}
-
-.euro-symbol {
-  font-size: 24px;
-  vertical-align: super;
-  margin-right: 5px;
-}
-
-.price-header-line {
-  width: 33%;
-  height: 2px;
-  background-color: black;
-  margin: 0 auto; /* Centers the line horizontally */
 }
