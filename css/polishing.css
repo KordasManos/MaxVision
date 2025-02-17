@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   padding-top: 20vh;
+  margin-bottom: 10vh;
 }
 
 .row-polishing-info h1 {
