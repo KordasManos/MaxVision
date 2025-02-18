@@ -1,173 +1,59 @@
-/* -------------------- Ceramic Coating Page -------------------------- */
-.ceramic-coating-section {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
-
-.ceramic-coating-section > .row {
-  justify-content: space-evenly;
-}
-
-.ceramic-coating-info > h2 {
-  color: black;
-  font-weight: 800;
-}
-
-.ceramic-coating-info > p {
-  color: black;
-}
-
-.ceramic-image {
-  background-image: url(/assets/images/profile-lambo.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/*--------- Coating Services ----------------*/
-.coating-rims-section {
-  background-color: #f0f1f4;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #f8f9fa;
-}
-
-.coating-rims-container > .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coating-rims-container > .row > .col-5 > h1 {
-  color: #000000;
-  font-weight: 800;
-}
-
-.coating-rims-banner {
-  height: 20vw;
-  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
-    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/profile-audi.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.coating-windows-section {
-  background-color: #f0f1f4;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #f8f9fa;
-}
-
-.coating-windows-container > .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coating-windows-container > .row > .col-5 > h1 {
-  color: #000000;
-  font-weight: 800;
-}
-
-.coating-windows-banner {
-  height: 20vw;
+.step-1 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-coating.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.coating-plastic-parts-section {
-  background-color: #f0f1f4;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #f8f9fa;
-  margin-bottom: 10vw;
-}
-
-.coating-plastic-parts-container > .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coating-plastic-parts-container > .row > .col-5 > h1 {
-  color: #000000;
-  font-weight: 800;
-}
-
-.coating-plastic-parts-banner {
-  height: 20vw;
+.step-2 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/banner-lambo.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    url(/assets/images/car-polishing.jpeg);
 }
 
-.ceramic-price-item {
-  border-radius: 15px;
-  background-color: #fff;
-  height: auto;
-  margin-bottom: 10vh;
-  width: 20%;
+.step-3 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
 }
 
-.ceramic-prices-section {
-  background-color: #f0efef;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  justify-content: space-around;
+.step-4 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
 }
+
+.step-5 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
+}
+
+
+/* -------------------- RESPONSIVE -------------------------- */
 
 @media only screen and (max-width: 576px) {
-  .ceramic-coating-info h2 {
+  .service-info h2 {
     font-size: large;
     font-weight: 800;
   }
-  .ceramic-coating-info p {
+  .service-info p {
     font-size: xx-small;
   }
-  .ceramic-price-item {
-    font-size: small;
-    margin-bottom: 2rem;
-    width: 80%;
-  }
-  .ceramic-image {
-    height: 140px;
-  }
-  .prices-header h1 {
-    font-size: larger;
-    font-weight: 800;
-  }
-  .coating-rims-banner,
-  .coating-windows-banner,
-  .coating-plastic-parts-banner {
+  .step-banner {
     display: none;
   }
 
-  .coating-text-start-1 {
+  .text-start-1 {
     font-size: small;
     background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/profile-audi.jpg);
+      url(/assets/images/car-polishing.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  .coating-text-start-2 {
+  .text-start-2 {
     font-size: small;
     background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
@@ -177,36 +63,10 @@
     background-repeat: no-repeat;
   }
 
-  .coating-text-start-3 {
-    font-size: small;
-    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
-      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/banner-lambo.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .coating-text-start-1 h1,
-  .coating-text-start-1 h2,
-  .coating-text-start-2 h1,
-  .coating-text-start-2 h2 {
+  .text-start-1 h1,
+  .text-start-1 h2,
+  .text-start-2 h1,
+  .text-start-2 h2 {
     font-weight: 800;
-  }
-
-  .coating-rims-section,
-  .coating-windows-section {
-    padding-bottom: 1rem;
-  }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 1024px) {
-  .ceramic-price-item {
-    margin-bottom: 2rem;
-    width: 25%;
-  }
-  .ceramic-image {
-    height: 20rem;
-    width: 35%;
   }
 }

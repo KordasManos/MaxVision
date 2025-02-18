@@ -379,6 +379,56 @@ video {
   justify-content: space-evenly;
 }
 
+.steps_header{
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ----------------------- SERVICE SECTION ----------------------------*/
+.service-row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20vh;
+  margin-bottom: 10vh;
+}
+
+.service-row h1 {
+  font-weight: 800;
+  color: #000000;
+}
+
+.service-info p {
+  font-size: larger;
+}
+
+.step-section {
+  background-color: #f0f1f4;
+  opacity: 0.8;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #f8f9fa;
+}
+
+.step-container > .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.step-container > .row > .col-5 > h1 {
+  color: #000000;
+  font-weight: 800;
+}
+
+.step-banner {
+  height: 20vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* ----------------------------------- Youtube Videos ------------------------------------*/
 
 .video-popup {
