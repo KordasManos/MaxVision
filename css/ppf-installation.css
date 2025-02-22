@@ -1,134 +1,64 @@
-/* -------------------- PPF Installation Page -------------------------- */
-.ppf-installation-section {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
+.step-1 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
 }
 
-.ppf-installation-section > .row {
-  justify-content: space-evenly;
+.step-2 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
 }
 
-.ppf-installation-info > h2 {
-  color: black;
-  font-weight: 800;
+.step-3 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
 }
 
-.ppf-installation-info > p {
-  color: black;
+.step-4 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
 }
 
-.ppf-installation-image {
-  background-image: url(/assets/images/ppf.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.step-5 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
 }
 
-.ppf-prices-section {
-  background-color: #f0efef;
-  opacity: 0.8;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  justify-content: space-around;
+.step-6 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
 }
 
-.ppf-price-item {
-  border-radius: 15px;
-  background-color: #fff;
-  height: auto;
-  margin-bottom: 10vh;
-  width: 20%;
-}
-
-.ppf-pros-n-cons-section {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
-
-.ppf-pros-n-cons-section > .row {
-  justify-content: space-evenly;
-}
-
-.ppf-pros-n-cons-info > h2 {
-  color: black;
-  font-weight: 800;
-  padding-bottom: 1vw;
-}
-
-.ppf-pros-n-cons-info > p {
-  color: black;
-}
-
-.ppf-pros-n-cons-image {
-  background-image: url(/assets/images/ppf.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.ppf-pros-section {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
-
-.ppf-pros-section > .row {
-  justify-content: center;
-}
-
-.ppf-pros-info > h2 {
-  color: black;
-  font-weight: 800;
-  padding-bottom: 1vw;
-}
-
-.ppf-pros-info > p {
-  color: black;
-}
+/* -------------------- RESPONSIVE -------------------------- */
 
 @media only screen and (max-width: 576px) {
-  .ppf-installation-info h2 {
+  .service-info h2 {
     font-size: large;
     font-weight: 800;
   }
-  .ppf-installation-info p {
+  .service-info p {
     font-size: xx-small;
   }
-  .ppf-installation-image,
-  .ppf-pros-n-cons-image {
-    height: 140px;
-  }
-
-  .prices-header h1 {
-    font-size: larger;
-    font-weight: 800;
-  }
-
-  .ppf-price-item {
-    font-size: small;
-    margin-bottom: 2rem;
-    width: 80%;
-  }
-
-  /*
-  .coating-rims-banner,
-  .coating-windows-banner,
-  .coating-plastic-parts-banner {
+  .step-banner {
     display: none;
   }
 
-  .coating-text-start-1 {
+  .text-start-1 {
     font-size: small;
     background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/profile-audi.jpg);
+      url(/assets/images/car-polishing.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  .coating-text-start-2 {
+  .text-start-2 {
     font-size: small;
     background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
@@ -138,36 +68,10 @@
     background-repeat: no-repeat;
   }
 
-  .coating-text-start-3 {
-    font-size: small;
-    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
-      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/banner-lambo.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .coating-text-start-1 h1,
-  .coating-text-start-1 h2,
-  .coating-text-start-2 h1,
-  .coating-text-start-2 h2 {
+  .text-start-1 h1,
+  .text-start-1 h2,
+  .text-start-2 h1,
+  .text-start-2 h2 {
     font-weight: 800;
-  }
-
-  .coating-rims-section,
-  .coating-windows-section {
-    padding-bottom: 1rem;
-  } */
-}
-
-@media only screen and (min-width: 577px) and (max-width: 1024px) {
-  .ppf-price-item {
-    margin-bottom: 2rem;
-    width: 25%;
-  }
-  .ppf-installation-image {
-    height: 20rem;
-    width: 35%;
   }
 }

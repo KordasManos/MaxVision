@@ -31,10 +31,16 @@
 .step-6 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/ceramic-coating.jpg);
 }
 
 .step-7 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
+}
+
+.step-8 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-coating.jpg);
