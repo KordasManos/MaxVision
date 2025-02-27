@@ -257,26 +257,6 @@ video {
   justify-content: space-around;
 }
 
-.bla-bla {
-  padding-left: 100px;
-}
-
-.bla-bla > h1 {
-  color: black;
-  font-weight: 800;
-}
-
-.bla-bla > p {
-  color: black;
-  width: 95%;
-  font-size: large;
-}
-
-.bla-bla > button {
-  background-color: black;
-  border-color: darkorange;
-}
-
 .video-thumbnail {
   position: relative;
   width: 100vw;
@@ -709,7 +689,7 @@ video {
 }
 
 .learn-more-button {
-  background-color: black;
+  background-color: #222;
   border-color: darkorange;
 }
 .learn-more-button:hover {

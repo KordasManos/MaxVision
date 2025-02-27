@@ -131,13 +131,12 @@
     "hours_header": "Ώρες λειτουργίας"
   },
   "footer": {
-    "about_us_header": "Σχετικά με εμάς",
-    "about_us_p": "Το Max Vision Auto Detail βρίσκεται στην Αργυρούπολη (Αθήνα, GR). Προσφέρουμε ένα πλήρες πακέτο επαγγελματικών υπηρεσιών περιποίησης αυτοκινήτων: επίστρωση αυτοκινήτου, γυάλισμα, καθαρισμός εσωτερικών χώρων, πώληση προϊόντων περιποίησης και πολλά άλλα.",
-    "location_1_header": "Διεύθυνση",
-    "location_1_p": "Λεωφ. Κύπρου 160, Αργυρούπολη 164 52",
-    "location_2_header": "Επικοινωνίες",
-    "location_2_p_A": "Email: maxvisionautodetailing@gmail.com",
-    "location_2_p_B": "Τηλέφωνο: 213 0477412",
+    "telephone": "Τηλέφωνο: ",
+    "telephone_number": "213 0477412",
+    "address": "Διεύθυνση: ",
+    "address_number": "Λεωφ. Κύπρου 160, Αργυρούπολη 164 52",
+    "email": "Email: ",
+    "email_address": "maxvisionautodetailing@gmail.com",
     "copyright": "© 2023 Max Vision Auto Detailing. Με επιφύλαξη παντός δικαιώματος"
   },
   "title": "MaxVision",
