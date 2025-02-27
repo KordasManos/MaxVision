@@ -70,98 +70,98 @@ $(document).ready(function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const cards = document.querySelectorAll('.gallery-grid .card img');
-  const imagePopup = document.getElementById('imagePopup');
-  const carouselInner = document.querySelector('.carousel-inner');
-  const closePopup = document.querySelector('.close-popup');
-  const prev = document.getElementById('prev');
-  const next = document.getElementById('next');
-  let currentIndex = 0;
-  let images = [];
+// document.addEventListener('DOMContentLoaded', function () {
+//   const cards = document.querySelectorAll('.gallery-grid .card img');
+//   const imagePopup = document.getElementById('imagePopup');
+//   const carouselInner = document.querySelector('.carousel-inner');
+//   const closePopup = document.querySelector('.close-popup');
+//   const prev = document.getElementById('prev');
+//   const next = document.getElementById('next');
+//   let currentIndex = 0;
+//   let images = [];
 
-  cards.forEach((card, index) => {
-      images.push(card.src);
+//   cards.forEach((card, index) => {
+//       images.push(card.src);
 
-      card.addEventListener('click', function () {
-          currentIndex = index;
-          openModal();
-      });
-  });
+//       card.addEventListener('click', function () {
+//           currentIndex = index;
+//           openModal();
+//       });
+//   });
 
-  function openModal() {
-      imagePopup.style.display = 'flex';
-      updateCarousel();
-  }
+//   function openModal() {
+//       imagePopup.style.display = 'flex';
+//       updateCarousel();
+//   }
 
-  closePopup?.addEventListener('click', function () {
-      imagePopup.style.display = 'none';
-  });
+//   closePopup?.addEventListener('click', function () {
+//       imagePopup.style.display = 'none';
+//   });
 
-  function updateCarousel() {
-      carouselInner.innerHTML = `
-          <div class="carousel-item active">
-              <img src="${images[currentIndex]}" alt="Gallery Image" />
-          </div>`;
-  }
+//   function updateCarousel() {
+//       carouselInner.innerHTML = `
+//           <div class="carousel-item active">
+//               <img src="${images[currentIndex]}" alt="Gallery Image" />
+//           </div>`;
+//   }
 
-  prev?.addEventListener('click', function () {
-      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-      updateCarousel();
-  });
+//   prev?.addEventListener('click', function () {
+//       currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+//       updateCarousel();
+//   });
 
-  next?.addEventListener('click', function () {
-      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-      updateCarousel();
-  });
+//   next?.addEventListener('click', function () {
+//       currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+//       updateCarousel();
+//   });
 
-  imagePopup?.addEventListener('click', function (e) {
-      if (e.target === imagePopup) {
-          imagePopup.style.display = 'none';
-      }
-  });
-});
+//   imagePopup?.addEventListener('click', function (e) {
+//       if (e.target === imagePopup) {
+//           imagePopup.style.display = 'none';
+//       }
+//   });
+// });
 
 
-document?.addEventListener('DOMContentLoaded', function () {
-    const filterButtons = document.querySelectorAll('.gallery-filter button');
-    const cards = document.querySelectorAll('.gallery-grid .card');
+// document?.addEventListener('DOMContentLoaded', function () {
+//     const filterButtons = document.querySelectorAll('.gallery-filter button');
+//     const cards = document.querySelectorAll('.gallery-grid .card');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const filterValue = this.getAttribute('data-filter');
+//     filterButtons.forEach(button => {
+//         button.addEventListener('click', function () {
+//             const filterValue = this.getAttribute('data-filter');
 
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
+//             filterButtons.forEach(btn => btn.classList.remove('active'));
+//             this.classList.add('active');
 
-            cards.forEach(card => {
-                if (filterValue === 'all' || card.classList.contains(filterValue)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
+//             cards.forEach(card => {
+//                 if (filterValue === 'all' || card.classList.contains(filterValue)) {
+//                     card.style.display = 'block';
+//                 } else {
+//                     card.style.display = 'none';
+//                 }
+//             });
+//         });
+//     });
 
-    // Dropdown filter functionality
-    const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+//     // Dropdown filter functionality
+//     const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
 
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetCheck = this.getAttribute('data-check');
+//     dropdownItems.forEach(item => {
+//         item.addEventListener('click', function (e) {
+//             e.preventDefault();
+//             const targetCheck = this.getAttribute('data-check');
 
-            const checkbox = document.getElementById(targetCheck);
-            if (checkbox) {  // Check if the element exists
-                checkbox.checked = true;
-                document.querySelector(`label[for=${targetCheck}]`).click();
-            } else {
-                console.warn(`Element with id "${targetCheck}" not found.`);
-            }
-        });
-    });
-});
+//             const checkbox = document.getElementById(targetCheck);
+//             if (checkbox) {  // Check if the element exists
+//                 checkbox.checked = true;
+//                 document.querySelector(`label[for=${targetCheck}]`).click();
+//             } else {
+//                 console.warn(`Element with id "${targetCheck}" not found.`);
+//             }
+//         });
+//     });
+// });
 
 
 /* TRANSLATION SERVICE */

@@ -1,0 +1,72 @@
+.step-1 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
+}
+
+.step-2 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
+}
+
+.step-3 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
+}
+
+.step-4 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/car-polishing.jpeg);
+}
+
+.step-5 {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+    linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+    url(/assets/images/ceramic-coating.jpg);
+}
+
+
+/* -------------------- RESPONSIVE -------------------------- */
+
+@media only screen and (max-width: 576px) {
+  .service-info h2 {
+    font-size: large;
+    font-weight: 800;
+  }
+  .service-info p {
+    font-size: xx-small;
+  }
+  .step-banner {
+    display: none;
+  }
+
+  .text-start-1 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/car-polishing.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-start-2 {
+    font-size: small;
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/ceramic-coating.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-start-1 h1,
+  .text-start-1 h2,
+  .text-start-2 h1,
+  .text-start-2 h2 {
+    font-weight: 800;
+  }
+}
