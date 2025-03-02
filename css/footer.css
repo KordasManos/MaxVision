@@ -1,15 +1,14 @@
-/* Footer Styling */
 .footer {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text color */
+  background-color: #222;
+  color: #fff;
   padding: 30px 0;
   font-family: Arial, sans-serif;
 }
 
 .footer-info {
   display: flex;
-  justify-content: space-between; /* Distribute content evenly */
-  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -17,11 +16,11 @@
   flex: 1;
   min-width: 150px;
   display: flex;
-  justify-content: center; /* Center the logo */
+  justify-content: end;
 }
 
 .footer-logo-img {
-  width: 100px; /* Adjust logo size */
+  width: 10vw;
   height: auto;
 }
 
@@ -31,34 +30,55 @@
   padding-left: 20px;
 }
 
-.footer-contact h4 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 5px;
+.footer-detail {
+  display: flex;
+  gap: 1vw;
 }
 
-.footer-contact p {
+.footer-detail h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.footer-detail p {
   font-size: 0.95rem;
   margin: 5px 0;
 }
 
-.footer-contact a {
+.footer-detail a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-contact a:hover {
+.footer-detail a:hover {
   text-decoration: underline;
 }
 
 .copyright {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   margin-top: 20px;
 }
 
 .copyright p {
   color: #ccc;
+}
+
+.footer-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 1vw;
+}
+
+.footer-social a {
+  color: #fff; /* Icon color */
+  font-size: 1.4rem; /* Icon size */
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff6600; /* Hover color matching the rest of the design */
 }
 
 /* Responsive Design for Smaller Screens */
@@ -77,8 +97,12 @@
     width: 80px; /* Adjust logo size on mobile */
   }
 
-  .footer-contact h4,
-  .footer-contact p {
-    font-size: 0.85rem; /* Slightly smaller font size for mobile */
+  .footer-social {
+    justify-content: center; /* Center social media icons on mobile */
+    margin-top: 15px;
+  }
+
+  .footer-social a {
+    font-size: 1.2rem;
   }
 }

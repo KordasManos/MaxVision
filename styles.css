@@ -56,83 +56,20 @@ video {
   color: black;
 }
 
-.row-pb-10 {
-  padding-bottom: 10vh;
-}
-
-.my-row {
-  justify-content: space-between;
-}
-
-.parent-service-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.service-item {
-  position: relative;
-  width: 100%; /* Ensure it doesn't exceed the parent */
-  height: 100%; /* Ensure it fills the parent */
-  padding-top: 0; /* Remove excess padding that could cause overflow */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-item-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/images/interior1.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.service-item-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/images/polish1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 23vh;
-}
-
-.service-item-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/images/ceramic1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 23vh;
-}
-
-.service-item-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/images/ppf1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 23vh;
-}
-
-.service-item-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/images/moto-wash.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 23vh;
-}
-
 .about-services {
   padding-bottom: 2vh;
   padding-left: 20vw;
   padding-right: 20vw;
 }
 
-.services {
-  padding-bottom: 10vh;
+.about-services i {
+  font-size: 2rem;
+  color: #ff6600;
+  margin-right: 15px;
 }
-
+.about-services-paragraph {
+  display: flex;
+}
 .section-title {
   font-size: 1.8rem; /* Responsive font size */
   font-family: "Poppins", sans-serif; /* Modern and clean font */
@@ -148,7 +85,6 @@ video {
   margin-bottom: 5vh;
 }
 
-/* Section Styling */
 .gray-container {
   background-color: #f4f4f4; /* Light background */
   padding: 60px 0;
@@ -211,53 +147,7 @@ video {
   margin-bottom: 1.5rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .why-us-content ul {
-    grid-template-columns: 1fr; /* Stack the items on smaller screens */
-  }
-
-  .section-title {
-    font-size: 2rem; /* Adjust title size on smaller screens */
-  }
-}
-
-.service-title {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 90%; /* Prevents text from overflowing */
-  text-align: center;
-  white-space: normal; /* Allows text wrapping */
-  word-wrap: break-word;
-  overflow: hidden; /* Ensures no text spills out */
-}
-
-.first-word {
-  color: white;
-}
-
-.second-word {
-  color: darkorange;
-}
-
-.logo-image {
-  max-height: 49px;
-  padding-bottom: 4px;
-}
-
-.row-coating-info {
-  display: flex;
-  justify-content: space-around;
-}
-
-.video-thumbnail {
+/* .video-thumbnail {
   position: relative;
   width: 100vw;
   height: 50vw;
@@ -283,9 +173,9 @@ video {
   background: url("https://img.icons8.com/ios-filled/100/ffffff/play-button-circled.png")
     no-repeat center;
   background-size: contain;
-}
+} */
 
-.video-popup {
+/* .video-popup {
   display: none;
   position: fixed;
   top: 0;
@@ -296,33 +186,6 @@ video {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-}
-
-.video-popup-content {
-  position: relative;
-  width: calc(40vw * 16 / 9);
-  height: 40vw;
-  margin: 0;
-  padding: 0;
-}
-
-.video-popup-content iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-
-/* .global-container {
-  padding-left: 10vw;
-  padding-right: 10vw;
-  margin-left: auto;
-  margin-right: auto;
 } */
 
 /* ----------------------------------- Follow Us Section ------------------------------------*/
@@ -385,73 +248,6 @@ video {
   color: #555;
 }
 
-.global-price-tag p {
-  font-size: 16px;
-  font-weight: normal;
-  margin: 0;
-  color: inherit;
-  display: inline;
-}
-
-.global-price-header {
-  color: black;
-  font-weight: 800;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  text-align: center;
-}
-
-.global-price-tag {
-  color: black;
-  font-weight: 800;
-  text-align: center;
-  font-size: xxx-large;
-  margin-top: 7vh;
-  margin-bottom: 7vh;
-}
-
-.prices-header {
-  text-align: center;
-  font-weight: 800;
-  padding-bottom: 5vh;
-  padding-top: 1rem;
-}
-
-.prices-header h1 {
-  color: black;
-  font-weight: 800;
-}
-
-.disclaimer-section {
-  justify-content: center;
-  margin-left: 20vh;
-  margin-right: 20vh;
-}
-
-.disclaimer-section h6 {
-  font-weight: 800;
-}
-
-.disclaimer-section p {
-  font-size: x-small;
-}
-
-.row-with-2-items {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.row-with-3-items {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.steps_header {
-  font-weight: 800;
-  color: #000000;
-  text-align: center;
-}
-
 /* ----------------------- SERVICE SECTION ----------------------------*/
 .service-row {
   display: flex;
@@ -461,12 +257,17 @@ video {
 }
 
 .service-row h1 {
-  font-weight: 800;
+  font-weight: 00;
   color: #000000;
 }
 
+.service-info h5 {
+  color: #222;
+  font-weight: 800;
+}
+
 .service-info p {
-  font-size: larger;
+  font-size: large;
 }
 
 .step-section {
@@ -486,6 +287,12 @@ video {
 .step-container > .row > .col-5 > h1 {
   color: #000000;
   font-weight: 800;
+}
+
+.step-header {
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
 }
 
 .step-banner {
@@ -508,6 +315,26 @@ video {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+}
+
+.video-popup-content {
+  position: relative;
+  width: calc(40vw * 16 / 9);
+  height: 40vw;
+  margin: 0;
+  padding: 0;
+}
+
+.video-popup-content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
 
 .video-container {
@@ -599,6 +426,17 @@ video {
 @media only screen and (max-width: 767px) {
   .follow-us-banner {
     display: none;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-us-content ul {
+    grid-template-columns: 1fr; /* Stack the items on smaller screens */
+  }
+
+  .section-title {
+    font-size: 2rem; /* Adjust title size on smaller screens */
   }
 }
 
