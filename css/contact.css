@@ -3,29 +3,36 @@
   margin-top: 10vw;
 }
 
-.contact-us-section > .row {
+.contact-us-section>.row {
   justify-content: center;
 }
 
-.contact-info > h2 {
+.contact-info {
+  padding-bottom: 2vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.contact-info>p {
   color: black;
-  font-weight: 800;
+}
+.contact-info-paragraph-container {
+  display: flex;
+  justify-content: center;
 }
 
-.contact-info > p {
-  color: black;
+.contact-info-paragraph {
+  display: flex;
+  width: 22rem;
 }
 
-.contact-info-image {
-  height: 20vw;
-  background-image: linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/profile-shop.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.contact-info-paragraph i {
+  font-size: 2rem;
+  color: #ff6600;
+  margin-right: 15px;
 }
 
-.working-hours > h5 {
+.working-hours>h5 {
   font-weight: 800;
 }
 
@@ -34,7 +41,8 @@
   padding: 0;
   margin: 0;
 }
-.hours-list > li {
+
+.hours-list>li {
   font-size: large;
 }
 
@@ -47,7 +55,8 @@
   display: flex;
   padding-top: 4vw;
 }
-.contact-contacts > .col-6 > h5 {
+
+.contact-contacts>.col-6>h5 {
   font-weight: 800;
 }
 
@@ -94,7 +103,8 @@
 }
 
 .opening-hours-table tr:nth-child(even) {
-  background-color: #f2f2f2; /* Zebra striping for table rows */
+  background-color: #f2f2f2;
+  /* Zebra striping for table rows */
 }
 
 .header {
@@ -113,7 +123,8 @@
 }
 
 .opening-hours-header::before {
-  content: "\1F551"; /* Clock icon */
+  content: "\1F551";
+  /* Clock icon */
   font-size: 1.2em;
   display: inline-block;
   margin-right: 10px;
@@ -148,6 +159,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
   .contact-info-image {
     padding-left: 2rem;
     padding-right: 2rem;

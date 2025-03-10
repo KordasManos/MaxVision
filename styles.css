@@ -9,6 +9,10 @@ video {
   height: auto;
 }
 
+.padding-top-5vh {
+  padding-top: 5vh;
+}
+
 /* ----------------------------------- Video Section ------------------------------------*/
 .video-container-home {
   z-index: -100;
@@ -67,10 +71,12 @@ video {
   color: #ff6600;
   margin-right: 15px;
 }
+
 .about-services-paragraph {
   display: flex;
 }
-.section-title {
+
+.global-section-title {
   font-size: 1.8rem; /* Responsive font size */
   font-family: "Poppins", sans-serif; /* Modern and clean font */
   color: #222; /* Dark gray for better readability */
@@ -435,7 +441,7 @@ video {
     grid-template-columns: 1fr; /* Stack the items on smaller screens */
   }
 
-  .section-title {
+  .global-section-title {
     font-size: 2rem; /* Adjust title size on smaller screens */
   }
 }
