@@ -16,6 +16,7 @@
 .contact-info>p {
   color: black;
 }
+
 .contact-info-paragraph-container {
   display: flex;
   justify-content: center;
@@ -193,5 +194,9 @@
   #open-status {
     width: 90%;
     font-size: 0.9em;
+  }
+
+  .contact-info-paragraph i {
+    font-size: 1rem;
   }
 }
