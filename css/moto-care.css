@@ -1,49 +1,49 @@
 .step-1 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/moto-wash.jpeg);
 }
 
 .step-2 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/moto-wheel.jpg);
 }
 
 .step-3 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/moto-polish.jpg);
 }
 
 .step-4 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/moto-engine-wash.jpg);
 }
 
 .step-5 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/moto-mirror.jpg);
 }
 
 .step-6 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/moto-sit.jpg);
 }
 
 .step-7 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/moto-bug-remove.jpg);
 }
 
 .step-8 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/moto-chain.jpg);
 }
 
 /* -------------------- RESPONSIVE -------------------------- */

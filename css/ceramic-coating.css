@@ -1,31 +1,31 @@
 .step-1 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/ceramic-uv.jpeg);
 }
 
 .step-2 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/ceramic-water.jpeg);
 }
 
 .step-3 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/ceramic-mirror.jpg);
 }
 
 .step-4 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/ceramic-scratch.jpg);
 }
 
 .step-5 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/ceramic-money.jpg);
 }
 
 

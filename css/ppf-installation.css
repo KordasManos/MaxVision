@@ -1,37 +1,37 @@
 .step-1 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/ppf-scratch.jpg);
 }
 
 .step-2 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/ppf-self-heal.jpg);
 }
 
 .step-3 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/ppf-paint.jpg);
 }
 
 .step-4 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/ppf-uv.jpg);
 }
 
 .step-5 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/ppf-water.jpg);
 }
 
 .step-6 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/ppf-shine.jpg);
 }
 
 /* -------------------- RESPONSIVE -------------------------- */

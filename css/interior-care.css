@@ -1,43 +1,43 @@
 .step-1 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/interior-dash.jpg);
 }
 
 .step-2 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/interior-sit.jpeg);
 }
 
 .step-3 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/interior-carpet.jpg);
 }
 
 .step-4 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/interior-roof.jpg);
 }
 
 .step-5 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/interior-windshield.jpg);
 }
 
 .step-6 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/car-polishing.jpeg);
+    url(/assets/images/interior-smell.jpeg);
 }
 
 .step-7 {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-    url(/assets/images/ceramic-coating.jpg);
+    url(/assets/images/interior-hard-spot.jpeg);
 }
 
 /* -------------------- RESPONSIVE -------------------------- */
