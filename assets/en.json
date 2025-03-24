@@ -1,4 +1,23 @@
 {
+  "home": {
+    "who_we_are": "WHO WE ARE:",
+    "welcome_to_our_page_1": "Welcome to our website! We are passionate professionals in the field of vehicle care and detailing. Specializing in car, motorcycle, and all types of vehicle polishing, we offer services that enhance the appearance and protect the value of your vehicle.",
+    "welcome_to_our_page_2": "Max Vision Auto Detailing, with years of experience and a passion for perfection in vehicle care. Our mission is to provide high-quality services that meet the needs and expectations of every customer. With attention to detail and the use of specialized products and techniques, we ensure that your vehicle will shine like new.",
+    "what_we_do": "WHAT WE DO:",
+    "car_polish_header": "Car Polishing",
+    "car_polish_details": "Restore your car’s shine and remove minor scratches.",
+    "learn_more": "Learn More",
+    "ceramic_coat_header": "Ceramic Coating",
+    "ceramic_coat_details": "Protect your car’s paint with a durable ceramic coating.",
+    "interior_care_header": "Interior Care",
+    "interior_care_details": "Deep clean your car’s interior.",
+    "ppf_install_header": "PPF Installation",
+    "ppf_install_details": "Protect your car’s paint with Paint Protection Film (PPF).",
+    "moto_care_header": "Motorcycle Detailing",
+    "moto_care_details": "Keep your motorcycle in top condition.",
+    "why_us": "WHY CHOOSE US:",
+    "why_us_list": "<ul><li><i class='fas fa-check-circle'></i> <strong>Experience and Expertise:</strong> Our knowledge in the field ensures top-tier results.</li> <li><i class='fas fa-user-tie'></i> <strong>Personalized Approach:</strong> We understand your needs and tailor our services accordingly.</li> <li><i class='fas fa-cogs'></i> <strong>Advanced Technology:</strong> We use the best products and tools on the market.</li> <li><i class='fas fa-thumbs-up'></i> <strong>Customer Satisfaction:</strong> Our priority is your satisfaction and long-term partnership.</li> <li><i class='fas fa-heart'></i> <strong>Passion for Perfection:</strong> We are dedicated to delivering the best results for your vehicle.</li> <li><i class='fas fa-shield-alt'></i> <strong>Safety and Trust:</strong> We guarantee that your vehicle will receive the best care and protection.</li></ul><p class='highlighted-text'>We are here to transform your vehicle and make it stand out. Trust us for a result that will exceed your expectations!</p><a href='html/contact.html' class='btn btn-primary learn-more-button'>Contact Us!</a>"
+  },
   "navbar": {
     "home": "HOME",
     "services": "SERVICES",
@@ -9,6 +28,15 @@
     "ppf_installation": "PPF INSTALLATION",
     "gallery": "GALLERY",
     "contact": "CONTACT"
+  },
+  "footer": {
+    "telephone": "Telephone: ",
+    "telephone_number": "213 0477412",
+    "address": "Address: ",
+    "address_number": "160 Kyprou Ave, Argyroupoli 164 52",
+    "email": "Email: ",
+    "email_address": "maxvisionautodetailing@gmail.com",
+    "copyright": "© 2023 Max Vision Auto Detailing. All rights reserved."
   },
   "interior_care": {
     "info_title": "CAR INTERIOR DEEP CLEANING",
@@ -189,16 +217,6 @@
     "telephone_header": "Telephone",
     "telephone_p": "213 0477412",
     "hours_header": "Opening hours"
-  },
-  "footer": {
-    "about_us_header": "About us",
-    "about_us_p": "Max Vision Auto Detail is located in Argiroupoli (Athens, GR). We offer a total package of professional car detailing services: car coating, polishing, interior cleaning, sales of detailing products and more",
-    "location_1_header": "Address",
-    "location_1_p": "Leof. Kiprou 160, Argiroupoli 164 52",
-    "location_2_header": "Contacts",
-    "location_2_p_A": "Email: maxvisionautodetailing@gmail.com",
-    "location_2_p_B": "Phone: 213 0477412",
-    "copyright": "© 2023 Max Vision Auto Detailing. All rights reserved"
   },
   "title": "MaxVision",
   "car_cleaning": "Car Cleaning",

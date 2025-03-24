@@ -126,13 +126,13 @@ video {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .why-us-content ul li i {
   font-size: 2rem;
   color: #ff6600;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .why-us-content ul li:hover {
