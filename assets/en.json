@@ -134,6 +134,23 @@
     "step_5_header": "Final Touches",
     "step_5_body": "<ul><li><strong>Tires and plastic parts:</strong> Restoration of exterior plastics and tires for a uniform and fresh look.</li><li><strong>Detail inspection:</strong> Surface check for any imperfections and final corrections.</li></ul>"
   },
+  "two_stage_polishing": {
+    "header": "TWO-STAGE POLISHING",
+    "details": "The two-stage polishing exterior care package delivers outstanding results in restoring your vehicle’s appearance. Using advanced techniques, we remove deeper scratches and imperfections, bringing back the original shine while protecting the paint.",
+    "pros": "<strong>Advantages:</strong>",
+    "list": "<ul><li><strong>Removes up to 80-90% of surface imperfections.</strong></li><li><strong>Deep shine and color restoration.</strong></li><li><strong>Long-lasting protection from environmental factors.</strong></li><li><strong>Professional care and flawless results.</strong></li></ul>",
+    "what_includes": "What the Package Includes:",
+    "step_1_header": "Vehicle Preparation",
+    "step_1_body": "<ul><li><strong>High-quality wash:</strong> We use the two-bucket wash method to ensure maximum cleanliness without additional scratches.</li> <li><strong>Pre-wash foam:</strong> Active foam that removes dust and stubborn residues.</li> <li><strong>Wheel and tire cleaning:</strong> Eliminates grease stains and wear residues, leaving wheels clean and glossy.</li></ul>",
+    "step_2_header": "Deep Contaminant Removal",
+    "step_2_body": "<ul><li><strong>Iron particles and contaminants:</strong> Special products dissolve rust and other surface contaminants.</li> <li><strong>Clay bar treatment:</strong> We use clay to remove resin residues and environmental pollutants from the paint.</li></ul>",
+    "step_3_header": "Two-Stage Polishing",
+    "step_3_body": "<ul><li><strong>First Stage: Cutting:</strong> High-cutting compounds are applied using specialized polishing machines to remove deeper scratches and major imperfections.</li> <li><strong>Second Stage: Polishing:</strong> Softer polishes are applied to restore depth and shine to the color, ensuring a perfect finish.</li></ul>",
+    "step_4_header": "Paint Protection",
+    "step_4_body": "<ul><li><strong>Application of ceramic coating or sealant:</strong> Provides advanced protection against UV rays, dirt, and oxidation.</li> <li><strong>Sealing of headlights and glass surfaces:</strong> Special products are used to ensure resistance to rain and maintain clear visibility.</li></ul>",
+    "step_5_header": "Revitalization of Exterior Components",
+    "step_5_body": "<ul><li><strong>Plastic and tire conditioning:</strong> Restores the intensity of exterior plastics and bumpers.</li> <li><strong>Tire finishing:</strong> Matte or glossy finish application, depending on your preference.</li></ul>"
+  },
   "three_stage_polishing": {
     "header": "THREE-STAGE POLISHING",
     "details": "The three-stage polishing exterior care package is designed to refresh your vehicle’s appearance by removing light scratches, oxidation, and dullness.",
