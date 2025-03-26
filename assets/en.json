@@ -114,9 +114,9 @@
     "step_8_body": "<ul><li>Lubrication of the chain, bearings, and other moving parts for optimal performance.</li></ul>"
   },
   "polishing": {
-    "one_step": "ONE-STAGE",
-    "two_steps": "TWO-STAGE",
-    "three_steps": "THREE-STAGE"
+    "one_stage": "ONE-STAGE",
+    "two_stage": "TWO-STAGE",
+    "three_stage": "THREE-STAGE"
   },
   "one_stage_polishing": {
     "header": "ONE-STAGE POLISHING",
@@ -133,6 +133,23 @@
     "step_4_body": "<ul><li><strong>Wax or paint sealant:</strong> Application of a protective product that enhances shine and safeguards the surface from environmental factors such as UV radiation, rain, and pollution.</li><li><strong>Glass finishing:</strong> Cleaning and protecting windows with a specialized product.</li></ul>",
     "step_5_header": "Final Touches",
     "step_5_body": "<ul><li><strong>Tires and plastic parts:</strong> Restoration of exterior plastics and tires for a uniform and fresh look.</li><li><strong>Detail inspection:</strong> Surface check for any imperfections and final corrections.</li></ul>"
+  },
+  "three_stage_polishing": {
+    "header": "THREE-STAGE POLISHING",
+    "details": "The three-stage polishing exterior care package is designed to refresh your vehicle’s appearance by removing light scratches, oxidation, and dullness.",
+    "pros": "<strong>Advantages:</strong>",
+    "list": "<ul><li><strong>Removes up to 95-99% of paint imperfections.</strong></li><li><strong>Restores deep scratches and oxidation.</strong></li><li><strong>Impressive shine and color depth.</strong></li><li><strong>Long-lasting paint protection.</strong></li><li><strong>Ideal for demanding customers and luxury cars.</strong></li></ul>",
+    "description": "Detailed Process Description:",
+    "step_1_header": "Cleaning and Preparation",
+    "step_1_body": "<ul><li><strong>Pre-wash with active foam:</strong> Removes surface dirt without causing new damage.</li> <li><strong>Two-bucket wash:</strong> Uses neutral shampoos and soft microfiber mitts for safe cleaning.</li> <li><strong>Wheel and tire cleaning:</strong> Eliminates brake dust, wear residues, and grease buildup.</li></ul>",
+    "step_2_header": "Contaminant Removal and Paint Preparation",
+    "step_2_body": "<ul><li><strong>Chemical decontamination for iron particles:</strong> Removes rust and metal contaminants from the paint surface.</li> <li><strong>Clay bar treatment:</strong> Eliminates stubborn contaminants such as resins, industrial pollution, and insect residues.</li> <li><strong>Paint degreasing:</strong> Prepares the surface for polishing with specialized degreasers for perfect product adhesion.</li></ul>",
+    "step_3_header": "Three-Stage Polishing – Deep Correction",
+    "step_3_body": "<ul><li><strong>First Stage: Heavy Cutting:</strong> Application of high-cutting compounds using advanced polishing machines to remove deep scratches, severe oxidation, and imperfections.</li> <li><strong>Second Stage: Medium Cutting:</strong> Smooths the surface and corrects smaller imperfections remaining from the first stage.</li> <li><strong>Third Stage: Finishing:</strong> Uses specialized finishing polishes for ultimate shine, deep color, and a mirror-like effect.</li></ul>",
+    "step_4_header": "Long-Term Protection Application",
+    "step_4_body": "<ul><li><strong>Ceramic coating:</strong> Multi-layer ceramic coating application for hydrophobic effect, UV protection, and resistance to chemicals and contaminants.</li> <li><strong>Glass and headlight sealing:</strong> Protection against moisture, rain, and wear.</li> <li><strong>Wheel protection:</strong> Coating with protective products for easier cleaning and resistance to dust and pollutants.</li></ul>",
+    "step_5_header": "Details and Final Touches",
+    "step_5_body": "<ul><li><strong>Restoration of exterior plastics and tires:</strong> Revitalization of color and long-term protection against wear and UV radiation.</li> <li><strong>Tire finishing:</strong> Application of matte or glossy finish, based on your preference.</li> <li><strong>Final inspection:</strong> Thorough vehicle check to ensure a flawless result.</li></ul>"
   },
   "title": "MaxVision",
   "follow_us_on_social": "<span>Follow us on</span><br> social media!",
