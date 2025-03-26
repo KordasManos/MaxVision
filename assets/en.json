@@ -31,12 +31,24 @@
   },
   "footer": {
     "telephone": "Telephone: ",
-    "telephone_number": "213 0477412",
+    "telephone_number": "6951119196 / 213 0477412",
     "address": "Address: ",
     "address_number": "160 Kyprou Ave, Argyroupoli 164 52",
     "email": "Email: ",
     "email_address": "maxvisionautodetailing@gmail.com",
     "copyright": "© 2023 Max Vision Auto Detailing. All rights reserved."
+  },
+  "contact": {
+    "contact_info_header": "CONTACT US",
+    "contact_info_p_1": "Would you like to receive a free quote or do you have a question regarding our products or services? Feel free to visit us or contact us via the info below.",
+    "contact_info_p_2": "An exact price determination for used cars is possible after inspection at our location. In this way we can propose you the most suitable treatment, tailored to your wishes and expectations.",
+    "address_header": "Address",
+    "address_p": "Leof. Kiprou 160, Argiroupoli 164 52",
+    "email_header": "Email",
+    "email_p": "maxvisionautodetailing@gmail.com",
+    "telephone_header": "Telephone",
+    "telephone_p": "6951119196 / 213 0477412",
+    "hours_header": "Opening hours"
   },
   "interior_care": {
     "info_title": "CAR INTERIOR DEEP CLEANING",
@@ -205,18 +217,6 @@
     "check_3": "Polishing",
     "check_4": "Ceramic Coating",
     "check_5": "PPF"
-  },
-  "contact": {
-    "contact_info_header": "CONTACT US",
-    "contact_info_p_1": "Would you like to receive a free quote or do you have a question regarding our products or services? Feel free to visit us or contact us via the info below.",
-    "contact_info_p_2": "An exact price determination for used cars is possible after inspection at our location. In this way we can propose you the most suitable treatment, tailored to your wishes and expectations.",
-    "address_header": "Address",
-    "address_p": "Leof. Kiprou 160, Argiroupoli 164 52",
-    "email_header": "Email",
-    "email_p": "maxvisionautodetailing@gmail.com",
-    "telephone_header": "Telephone",
-    "telephone_p": "213 0477412",
-    "hours_header": "Opening hours"
   },
   "title": "MaxVision",
   "car_cleaning": "Car Cleaning",
