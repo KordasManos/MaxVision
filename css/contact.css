@@ -152,9 +152,9 @@
   color: darkorange;
 }
 
-@media only screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .contact-info {
-    font-size: xx-small;
+    font-size: small;
     word-wrap: break-word;
     overflow-wrap: break-word;
     padding-left: 2rem;
@@ -194,6 +194,14 @@
   #open-status {
     width: 90%;
     font-size: 0.9em;
+  }
+
+  .contact-info-paragraph {
+    width: 16rem;
+  }
+
+  .contact-info-paragraph p{
+    font-size: small;
   }
 
   .contact-info-paragraph i {

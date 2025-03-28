@@ -1,28 +1,28 @@
-.step-1 {
+.step-1-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-uv.jpeg);
 }
 
-.step-2 {
+.step-2-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-water.jpeg);
 }
 
-.step-3 {
+.step-3-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-mirror.jpg);
 }
 
-.step-4 {
+.step-4-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-scratch.jpg);
 }
 
-.step-5 {
+.step-5-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/ceramic-money.jpg);
@@ -31,42 +31,35 @@
 
 /* -------------------- RESPONSIVE -------------------------- */
 
-@media only screen and (max-width: 576px) {
-  .service-info h2 {
-    font-size: large;
-    font-weight: 800;
-  }
-  .service-info p {
-    font-size: xx-small;
-  }
-  .step-banner {
-    display: none;
-  }
+@media (max-width: 768px) {
 
-  .text-start-1 {
-    font-size: small;
-    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+  .step-1-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/car-polishing.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      url(/assets/images/ceramic-uv.jpeg);
   }
 
-  .text-start-2 {
-    font-size: small;
-    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+  .step-2-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/ceramic-coating.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      url(/assets/images/ceramic-water.jpeg);
   }
 
-  .text-start-1 h1,
-  .text-start-1 h2,
-  .text-start-2 h1,
-  .text-start-2 h2 {
-    font-weight: 800;
+  .step-3-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/ceramic-mirror.jpg);
+  }
+
+  .step-4-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/ceramic-scratch.jpg);
+  }
+
+  .step-5-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/ceramic-money.jpg);
   }
 }

@@ -1,46 +1,46 @@
-.step-1 {
+.step-1-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-wash.jpeg);
 }
 
-.step-2 {
+.step-2-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-wheel.jpg);
 }
 
-.step-3 {
+.step-3-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-polish.jpg);
 }
 
-.step-4 {
+.step-4-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-engine-wash.jpg);
 }
 
-.step-5 {
+.step-5-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-mirror.jpg);
 }
 
-.step-6 {
+.step-6-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-sit.jpg);
 }
 
-.step-7 {
+.step-7-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-bug-remove.jpg);
 }
 
-.step-8 {
+.step-8-banner {
   background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
     linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
     url(/assets/images/moto-chain.jpg);
@@ -48,42 +48,53 @@
 
 /* -------------------- RESPONSIVE -------------------------- */
 
-@media only screen and (max-width: 576px) {
-  .service-info h2 {
-    font-size: large;
-    font-weight: 800;
-  }
-  .service-info p {
-    font-size: xx-small;
-  }
-  .step-banner {
-    display: none;
-  }
+@media (max-width: 768px) {
 
-  .text-start-1 {
-    font-size: small;
-    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+  .step-1-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/car-polishing.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      url(/assets/images/moto-wash.jpeg);
   }
 
-  .text-start-2 {
-    font-size: small;
-    background-image: linear-gradient(to right, rgba(248, 249, 250, 0), #f8f9fa),
+  .step-2-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
       linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
-      url(/assets/images/ceramic-coating.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      url(/assets/images/moto-wheel.jpg);
   }
 
-  .text-start-1 h1,
-  .text-start-1 h2,
-  .text-start-2 h1,
-  .text-start-2 h2 {
-    font-weight: 800;
+  .step-3-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/moto-polish.jpg);
+  }
+
+  .step-4-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/moto-engine-wash.jpg);
+  }
+
+  .step-5-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/moto-mirror.jpg);
+  }
+
+  .step-6-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/moto-sit.jpg);
+  }
+
+  .step-7-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/moto-bug-remove.jpg);
+  }
+
+  .step-8-text {
+    background-image: linear-gradient(to right, rgba(248, 249, 250, 0.185), #f8f9fa),
+      linear-gradient(to left, rgba(248, 249, 250, 0), #f8f9fa),
+      url(/assets/images/moto-chain.jpg);
   }
 }

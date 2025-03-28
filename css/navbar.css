@@ -171,7 +171,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   /* Adjust navbar for very small screens (e.g., iPhone SE) */
   .navbar {
     height: 7vh;
