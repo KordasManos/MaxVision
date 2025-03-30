@@ -1,12 +1,11 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
     <div class="container-fluid">
+        <div id="main">
+            <span id="burgerButton" class="burger-button" onclick="openNav()">&#9776;</span>
+        </div>
         <a class="navbar-brand" href="/index.html">
             <img src="/assets/images/profile-trans.png" alt="MaxVisionLogo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -64,4 +63,57 @@
         </div>
     </div>
 </nav>
+
+<!-- Mobile Sidenav (Initially Hidden) -->
+<div id="mySidenav" class="sidenav">
+
+    <li class="sidenav-top-item">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </li>
+
+    <li>
+        <a href="/index.html" data-translate="navbar.home"></a>
+    </li>
+    <li class="dropdown">
+        <a class=" dropdown-toggle" href="#" id="sideServicesDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" data-translate="navbar.polishing">
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="sideServicesDropdown">
+            <li><a class="dropdown-item" href="/html/polishing-one-stage.html" data-translate="polishing.one_stage"></a>
+            </li>
+            <li><a class="dropdown-item" href="/html/polishing-two-stage.html" data-translate="polishing.two_stage"></a>
+            </li>
+            <li><a class="dropdown-item" href="/html/polishing-three-stage.html"
+                    data-translate="polishing.three_stage"></a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="/html/ceramic-coating.html" data-translate="navbar.ceramic_coating"></a>
+    </li>
+    <li>
+        <a href="/html/interior-care.html" data-translate="navbar.interior_care"></a>
+    </li>
+    <li>
+        <a href="/html/ppf-installation.html" data-translate="navbar.ppf_installation"></a>
+    </li>
+    <li>
+        <a href="/html/moto-care.html" data-translate="navbar.moto_care"></a>
+    </li>
+    <li>
+        <a href="/html/contact.html" data-translate="navbar.contact"></a>
+    </li>
+
+    <li class="socials">
+        <a class="social-icon" href="https://www.facebook.com/MaxVisionAD/" target="_blank" title="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+        <a class="social-icon" href="https://www.instagram.com/maxvisionautodetailing/" target="_blank" title="Instagram"><i
+                class="fab fa-instagram"></i></a>
+        <a class="social-icon" href="https://www.youtube.com/@maxvisionautodetailing" target="_blank" title="YouTube"><i
+                class="fab fa-youtube"></i></a>
+        <button class="btn btn-outline-light social-icon" id="languageSwitchBtn" onclick="toggleLanguage()">
+            <span id="currentLanguage"></span>
+        </button>
+    </li>
+
+</div>
 <script src="/script.js"></script>

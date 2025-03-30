@@ -29,7 +29,7 @@
 
 .contact-info-paragraph i {
   font-size: 2rem;
-  color: #ff6600;
+  color: #ff7300;
   margin-right: 15px;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .today {
-  color: darkorange;
+  color: #ff7300;
 }
 
 @media (max-width: 768px) {
@@ -200,7 +200,7 @@
     width: 16rem;
   }
 
-  .contact-info-paragraph p{
+  .contact-info-paragraph p {
     font-size: small;
   }
 

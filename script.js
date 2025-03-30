@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 $(document).ready(function () {
   var currentDate = new Date();
   var weekday = [];
@@ -81,33 +80,33 @@ $(document).ready(function () {
 });
 
 /* TRANSLATION SERVICE */
-let currentLanguage;
-
 document.addEventListener('DOMContentLoaded', function () {
-  const languageToggleButton = document.getElementById('languageSwitchBtn');
-  const currentLanguageElement = document.getElementById('currentLanguage');
-
-  if (languageToggleButton) {
-    languageToggleButton.addEventListener('click', toggleLanguage);
-  }
+  const languageButtons = document.querySelectorAll('#languageSwitchBtn');
+  const languageSpans = document.querySelectorAll('#currentLanguage');
 
   const savedLanguage = localStorage.getItem('language');
   currentLanguage = savedLanguage ? savedLanguage : 'gr';
 
-  if (currentLanguageElement) {
-    currentLanguageElement.textContent = currentLanguage.toUpperCase();
-  }
+  // Update all language span elements
+  languageSpans.forEach(span => {
+    span.textContent = currentLanguage.toUpperCase();
+  });
+
+  // Add event listeners to all language buttons
+  languageButtons.forEach(button => {
+    button.addEventListener('click', toggleLanguage);
+  });
 
   loadTranslations(currentLanguage);
 });
 
 function toggleLanguage() {
   currentLanguage = currentLanguage === 'gr' ? 'en' : 'gr';
-  const currentLanguageElement = document.getElementById('currentLanguage');
 
-  if (currentLanguageElement) {
-    currentLanguageElement.textContent = currentLanguage.toUpperCase();
-  }
+  // Update all language span elements
+  document.querySelectorAll('#currentLanguage').forEach(span => {
+    span.textContent = currentLanguage.toUpperCase();
+  });
 
   localStorage.setItem('language', currentLanguage);
 
@@ -149,4 +148,29 @@ window.addEventListener('load', function () {
   }
 
   loadTranslations(currentLanguage);
+});
+
+function openNav() {
+  console.log("open");
+  document.getElementById("mySidenav").style.width = "55vw";
+  document.getElementById("burgerButton").style.display = "none";
+  document.querySelectorAll('#currentLanguage').forEach(span => {
+    span.textContent = currentLanguage.toUpperCase();
+  });
+}
+
+function closeNav() {
+  console.log("close");
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("burgerButton").style.display = "block";
+}
+
+document.addEventListener("click", function (event) {
+  const sidenav = document.getElementById("mySidenav");
+  const burgerButton = document.getElementById("burgerButton");
+
+  // Check if click is outside the sidenav and not on the burger button
+  if (sidenav.style.width === "55vw" && !sidenav.contains(event.target) && !burgerButton.contains(event.target)) {
+    closeNav();
+  }
 });

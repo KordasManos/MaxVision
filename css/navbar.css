@@ -55,7 +55,7 @@
   font-weight: bold;
   text-transform: capitalize;
   background-color: transparent;
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -63,7 +63,6 @@
   color: #928f8f;
 }
 
-/* Submenu Styling */
 .dropdown-submenu {
   position: relative;
 }
@@ -93,16 +92,23 @@
   margin-left: 10px;
 }
 
+#mySidenav,
+#main {
+  display: none;
+  /* Hide default navbar on mobile */
+}
+
 /* --------------------- Responsive Adjustments --------------------------*/
-@media (max-width: 992px) {
-  /* Navbar height for tablets and small desktops */
+@media (max-width: 768px) {
+
   .navbar {
     height: 10vh;
   }
 
   .navbar-brand img {
-    padding-left: 5vw;
+    padding-left: 0;
     max-height: 10vh;
+    margin-top: -1vh;
   }
 
   .navbar-nav a {
@@ -110,13 +116,14 @@
   }
 
   .navbar-collapse {
-    padding-right: 5vw; /* Adjust the right padding */
-    padding-left: 5vw; /* Ensure equal padding */
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 
   .dropdown-menu {
-    background-color: #ffffff; /* White background */
-    border: 1px solid black; /* Optional light border */
+    background-color: #222;
+    border: 1px solid #ffffff;
+    margin-left: 10% !important;
   }
 
   .navbar-scroll .nav-link,
@@ -124,7 +131,7 @@
   .navbar-scrolled .nav-link,
   .navbar-scrolled .navbar-toggler-icon,
   .footer-link {
-    color: darkorange;
+    color: #ff7300;
   }
 
   .dropdown-submenu .dropdown-menu {
@@ -136,66 +143,95 @@
   .dropdown-submenu:hover .dropdown-menu {
     display: block;
   }
-}
 
-@media (max-width: 768px) {
-  /* Navbar height for mobile devices */
-  .navbar {
-    height: 8vh;
+
+  body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
   }
 
-  .navbar-brand img {
-    padding-left: 2vw;
-    max-height: 8vh;
-  }
-
-  .navbar-nav a {
-    font-size: 2vh;
-  }
-
-  .navbar-collapse {
-    padding-right: 2vw; /* Adjust the right padding */
-    padding-left: 2vw; /* Ensure equal padding */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: width 0.5s ease-in-out;
+    padding-top: 60px;
   }
 
   .dropdown-menu .dropdown-item {
-    font-size: 2vh;
+    color: #ffffff;
   }
 
-  .navbar-scroll .nav-link,
-  .navbar-scroll .navbar-toggler-icon,
-  .navbar-scrolled .nav-link,
-  .navbar-scrolled .navbar-toggler-icon,
-  .footer-link {
-    color: darkorange;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Adjust navbar for very small screens (e.g., iPhone SE) */
-  .navbar {
-    height: 7vh;
+  .sidenav a {
+    padding: 0.1rem 0.1rem 0.1rem 2rem;
+    text-decoration: none;
+    font-size: smaller;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
   }
 
-  .navbar-brand img {
-    padding-left: 1vw;
-    max-height: 7vh;
+  .sidenav-top-item {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .navbar-nav a {
-    font-size: 1.8vh;
+  .sidenav a:hover {
+    color: #ff7300;
   }
 
-  .navbar-collapse {
-    padding-right: 1vw;
-    padding-left: 1vw;
+  .sidenav .closebtn {
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
 
-  .navbar-scroll .nav-link,
-  .navbar-scroll .navbar-toggler-icon,
-  .navbar-scrolled .nav-link,
-  .navbar-scrolled .navbar-toggler-icon,
-  .footer-link {
-    color: darkorange;
+  #mySidenav,
+  #main {
+    display: block;
+  }
+
+  /* Ensure content does not move */
+  #main {
+    margin-left: 0 !important;
+  }
+
+  .burger-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ff7300;
+    z-index: 1100;
+    /* Ensures button stays visible */
+  }
+
+  #languageSwitchBtn {
+    width: 2rem;
+    background-color: #222;
+    color: #ffffff;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    font-size: medium;
+  }
+
+  .socials a {
+    color: #ff7300 !important;
+  }
+
+  .social-icon {
+    padding: 0 !important;
+
   }
 }

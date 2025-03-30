@@ -69,7 +69,7 @@ video {
 
 .about-services i {
   font-size: 2rem;
-  color: #ff6600;
+  color: #ff7300;
   margin-right: 15px;
 }
 
@@ -86,7 +86,7 @@ video {
   letter-spacing: 1px;
   display: block;
   text-align: center;
-  border-bottom: 3px solid #ff6600;
+  border-bottom: 3px solid #ff7300;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 5vh;
@@ -129,7 +129,7 @@ video {
 
 .why-us-content ul li i {
   font-size: 2rem;
-  color: #ff6600;
+  color: #ff7300;
   margin-right: 10px;
 }
 
@@ -147,7 +147,7 @@ video {
 .highlighted-text {
   font-size: 1rem;
   font-weight: bold;
-  color: #ff6600;
+  color: #ff7300;
   margin-bottom: 1.5rem;
 }
 
@@ -188,7 +188,7 @@ video {
 }
 
 .youtube-link {
-  color: darkorange;
+  color: #ff7300;
 }
 
 
@@ -399,17 +399,18 @@ video {
 
 .learn-more-button {
   background-color: #222;
-  border-color: darkorange;
+  border-color: #ff7300;
 }
 
 .learn-more-button:hover {
-  background-color: darkorange;
-  border-color: darkorange;
+  background-color: #ff7300;
+  border-color: #ff7300;
 }
 
 .last-section {
   margin-bottom: 10vh;
 }
+
 /* ----------------------------------- RESPONSIVE ------------------------------------*/
 @media (max-width: 768px) {
   .follow-us-banner {
@@ -496,7 +497,7 @@ video {
   .step-section {
     margin-bottom: 2rem;
   }
-  
+
   li {
     font-size: small;
   }
